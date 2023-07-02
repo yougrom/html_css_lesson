@@ -1,0 +1,85 @@
+/*HTML*/
+body, html {
+    margin: 0;
+    font-family: "Montserrat","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+* {
+    position: relative;
+    padding: 25px 25px 20px;
+    margin: 0;
+    border-radius: 4px;
+}
+html {
+    display: block;
+}
+/*before*/
+html::before {
+    content: "html";
+}
+body::before, footer::before, 
+header::before, html::before, 
+main::before {
+    color: #7fc1ff;
+}
+::before{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: .04em;
+}
+
+/*Body*/
+body {
+    min-width: 430px;
+    border: 2px dashed #c7e4ff;
+}
+body {
+    display: block;
+}
+body::before {
+    content: "body";
+}
+
+/*Main*/
+footer, header, main {
+    background-color: #f3faff;
+    border: 2px solid #7fc1ff;
+}
+main::before {
+    content: "main";
+}
+
+/*Header*/
+:not(:last-child) {
+    margin-bottom: 20px;
+}
+header::before{
+    content:"header";
+}
+/*Footer*/
+footer::before{
+    content:"footer";
+}
+
+/*Section*/
+nav, section, article, aside {
+    background-color: #f9f7ff;
+    border: 2px solid #9779ec;
+}
+section::before{
+    content:"section";
+}
+nav::before, section::before, 
+article::before, aside::before {
+    color: #9779ec;
+}
+
+/*navigation*/
+nav::before{
+    content:"nav";
+}
