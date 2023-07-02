@@ -61,16 +61,13 @@
            <li>Item 3</li>
            <li>Item 4</li>
           </ol>
-        <h2>Test Emmet - .page>div.logo{Logo}+ul.nav>li*5>a{Item$}</h2>
+        <h2>Test Emmet - </h2>
           <div class="page">
             <div class="logo">Logo</div>
-            <ul class="nav">
-                <li><a href="">Item1</a></li>
-                <li><a href="">Item2</a></li>
-                <li><a href="">Item3</a></li>
-                <li><a href="">Item4</a></li>
-                <li><a href="">Item5</a></li>
-            </ul>
+            <ol class="nav">
+                <li><code>.emmet-01>ul.nav>li.item$*8{Item$}</code></li>
+                <li><code>.page>div.logo{Logo}+ul.nav>li*5>a{Item$}<code></li>
+            </ol>
           </div>
           <div class="page">
             <div class="logo">Logo</div>
@@ -92,9 +89,134 @@
                 <li><a href="">Item5</a></li>
             </ul>
           </div>
-            .emmet-01>ul.nav>li.item$*8{Item$}
             
     </article>
+    <section>
+<h2>Tags dl, dt and dd, list of descriptions</h2>
+<ol>
+    <li>dl - (сокращение от «description list») обозначает сам список описаний;</li>
+    <li>dt - (сокращение от «description term») обозначает термин;</li>
+    <li>dd - (сокращение от «description definition») обозначает описание или определение.</li>
+</ol>
+<strong>Example 01</strong>
+<dl>
+    <dt>HTML</dt>
+    <dd>Язык гипертекстовой разметки</dd>
+    <dt>CSS</dt>
+    <dd>Каскадные таблицы стилей</dd>
+    <dd>Язык для оформления HTML-документов</dd>
+</dl>
+<strong>Example 01</strong>
+<div>
+    <dl>
+        <dt>Question1</dt>
+        <dd>Answer1</dd>
+        <dt>Question2</dt>
+        <dd>Answer2</dd>
+        <dt>Question3</dt>
+        <dd>Answer3</dd>
+    </dl>
+</div>
+<footer>
+    <p></p>
+</footer>
+    </section>
+    <section>
+        <h2>pre tag, preformatted text</h2>
+                <pre>
+                    /\_/\
+                   ( o.o )
+                    = ^ =
+                </pre>
+    </section>
+    <section>
+        <h2>Mnemonics in HTML</h2>
+            <p>&lt;ul&gt;
+                &lt;/ul&gt;</p>
+                <p>Существует множество других символов-мнемоник. Например: 
+                    <code>&amp;copy;</code>, 
+                    <code>&amp;laquo;</code>, 
+                    <code>&amp;raquo;</code>, 
+                    <code>&amp;sect;</code>. Полный список мнемоник представлен на&nbsp;<a href="https://dev.w3.org/html5/html-author/charref" target="_blank" rel="nofollow noopener">специальной странице</a>.</p>
+    </section>
+    <section>
+        <h2>Code tag, code snippet</h2>
+        <p>Сегодня зашёл на несколько сайтов посмотреть, как они свёрстаны. Увидел какие-то цитаты и незнакомые теги <code>&lt;cite&gt;</code> и <code>&lt;blockquote&gt;</code>.</p>
+    </section>
+
+    <section>
+        <h2>Combining pre and code tags</h2>
+        <strong>Example 01</strong>
+        <p>Главное — соблюдать правильный порядок вложенности. Тег <code>&lt;code&gt;</code> можно вкладывать внутрь тега <code>&lt;pre&gt;</code>, а наоборот делать нельзя.</p>
+        <strong>Example 02</strong>
+        <pre><code>
+            if (a > b) {              // Игзампл оф коде ин
+            console.log('Hello!');    // ДжаваСкрипт лангуаге
+            }
+        </code></pre>
+        <strong>Example 03</strong>
+        <pre><code>
+            &lt;blockquote&gt;
+              &lt;p&gt;Ум ценится дорого, когда дешевеет сила.&lt;/p&gt;
+              &lt;cite&gt;Джейсон Стэтхэм&lt;/cite&gt;
+            &lt;/blockquote&gt;
+                    </code></pre>
+    </section>
+    <section>
+        <h2>q tag, inline quote</h2>
+        <strong>Example 01</strong>
+        <p> В спецификации говорится: <q cite="https://www.w3.org/TR/html52/">The q element represents some phrasing content quoted from another source</q>.</p>
+        <strong>Example 02</strong>
+        <p>По словам <cite>Чарльза Буковски</cite> — <q>Интеллектуал о простой вещи говорит сложно — художник сложную вещь описывает простыми словами.</q></p>
+        <article>
+            <p>Как говорится, <q>для хорошего кота и в феврале март</q> (народная мудрость).</p>
+        </article>
+    </section>
+
+<section>
+    <h2>blockquote tag, single quote</h2>
+    <strong>Example 01</strong>
+    <blockquote>
+        <p>Ум ценится дорого, когда дешевеет сила.</p>
+        <cite>Джейсон Стэтхэм</cite>
+    </blockquote>
+    <strong>Example 02</strong>
+    <blockquote>
+        <p>
+          Мяу мяу мяу
+          мррр мяу мяяяу
+          мяу мяу
+          мяу
+        </p>
+
+        <cite>Собрание произведений М. Котидзе.</cite>
+      </blockquote>
+</section>
+
+<section>
+    <h2>br tag, line break</h2>
+    <strong>Example 01</strong>
+    <blockquote>
+        <p>Мяу мяу мяу<br>
+            мррр мяу мяяяу<br>
+            мяу мяу<br>
+            мяу</p>
+            <cite>Собрание произведений М. Котидзе.</cite>
+    </blockquote>
+</section>
+<section>
+    <h2>Sub and sup tags, subscript and superscript</h2>
+    <p>Тег <code>&lt;sup&gt;</code> (сокращение от «superscript») отображает текст в виде верхнего индекса, а тег <code>&lt;sub&gt;</code> (сокращение от «subscript») в виде нижнего индекса.</p>
+    <strong>Example 01</strong>
+    <p>
+        20m<sup>2</sup><br>
+        H<sub>2</sub>O<br>
+        x<sup>2</sup>+x<sup>4</sup>=1
+    </p>
+    <strong>Example 02</strong>
+    <p>e<sup>x<sup>2</sup></sup></p>
+    <p>y<sup>x<sub>n</sub>+1</sup></p>
+</section>
       <aside>
         Тут могла быть ваша реклама
       </aside>
