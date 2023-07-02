@@ -8,19 +8,93 @@
 </head>
 <body>
     <header>
-      <p>Blog</p>
+      <p>My Blog</p>
       <nav>
         Home
       </nav>
     </header>
     <main>
-      <article>
-        <h1>День первый. Как я забыл покормить кота</h1>
+    <article>
+      <h1>Text Markup</h1>
+        <h2>Unordered list</h2>
+         <ul>
+            <li>list item - 1</li>
+            <li>list item - 2</li>
+            <li>list item - 3</li>
+         </ul>
 
-        <p>Кто бы мог подумать, что семантика это так важно, мне срочно нужно было об этом поговорить.</p>
-
-        <p>Взгляд упал на кота. Кот издал настойчивое «Мяу». И я понял — пришло время для первой записи в блог. И покормить кота.</p>
-      </article>
+        <h2>Ordered list</h2>
+         <ol>
+            <li>ты делаешь полезное дело</li>
+            <li>можешь работать удалённо</li>
+            <li>интересные люди</li>
+         </ol>
+        <!-- Задайте атрибут reversed этому списку -->
+        <h2>Reversed list</h2>
+        <ol reversed>
+            <li>Red Dead Redemption 2</li>
+            <li>Detroit: Become Human</li>
+            <li>Spider-Man</li>
+            <li>God of War</li>
+          </ol>
+  
+          <p>Теперь можно продолжить мой список дел.</p>
+  
+          <!-- Задайте атрибут start этому списку -->
+          <ol start="5">
+            <li>Приготовить поесть</li>
+            <li>Поиграть в God of War</li>
+            <li>Помыть посуду</li>
+            <li>Лечь спать</li>
+          </ol>
+        <h2>Nested Lists</h2>
+          <ol reversed start="4">
+           <li>Покормить кота
+            <ul>
+                <li>miska</li>
+                <li>korm</li>
+                <li>woter</li>
+            </ul>
+           </li>
+           <li>Item 1</li>
+           <li>Item 2</li>
+           <li>Item 3</li>
+           <li>Item 4</li>
+          </ol>
+        <h2>Test Emmet - .page>div.logo{Logo}+ul.nav>li*5>a{Item$}</h2>
+          <div class="page">
+            <div class="logo">Logo</div>
+            <ul class="nav">
+                <li><a href="">Item1</a></li>
+                <li><a href="">Item2</a></li>
+                <li><a href="">Item3</a></li>
+                <li><a href="">Item4</a></li>
+                <li><a href="">Item5</a></li>
+            </ul>
+          </div>
+          <div class="page">
+            <div class="logo">Logo</div>
+            <ul class="nav">
+                <li><a href="">Item1</a></li>
+                <li><a href="">Item2</a></li>
+                <li><a href="">Item3</a></li>
+                <li><a href="">Item4</a></li>
+                <li><a href="">Item5</a></li>
+            </ul>
+          </div>
+          <div class="page">
+            <div class="logo">Logo</div>
+            <ul class="nav">
+                <li><a href="">Item1</a></li>
+                <li><a href="">Item2</a></li>
+                <li><a href="">Item3</a></li>
+                <li><a href="">Item4</a></li>
+                <li><a href="">Item5</a></li>
+            </ul>
+          </div>
+            .emmet-01>ul.nav>li.item$*8{Item$}
+            
+    </article>
       <aside>
         Тут могла быть ваша реклама
       </aside>

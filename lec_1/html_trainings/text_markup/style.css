@@ -4,11 +4,14 @@ body {
     line-height: 22px;
     font-family: "Georgia", serif;
     color: #222222;
-    border: 1px solid red;
   }
   
   h1 {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 18px;
     line-height: normal;
   }
   
