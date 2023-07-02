@@ -83,3 +83,35 @@ article::before, aside::before {
 nav::before{
     content:"nav";
 }
+
+/*article*/
+article::before{
+    content:"article";
+}
+
+/*aside*/
+aside::before{
+    content:"aside";
+}
+
+/*H1*/
+h1{
+    font-size: 18px;
+    background-color:#fff;
+    border:2px solid #FF994F;
+}
+h1::before{
+    content:"h1";
+    color:#FF994F;
+}
+
+/*p*/
+p{
+    background-color: #fff;
+    border: 2px solid #f36dff;
+}
+
+p::before{
+    content: "p";
+    color: #f36dff;
+}
