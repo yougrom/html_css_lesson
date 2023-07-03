@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+        <section><nav><a href="#footer_id">Footer</a></nav></section>
+    </header>
+    <main>
+        <section id="content">
+            <h1>Links and images</h1>
+        </section>
+        <section>
+            <h2>What is a link, a («anchor») tag</h2>
+            <p>Адрес ссылки задаётся в формате URL с помощью атрибута href (сокращение от «hyper reference»).</p>
+            <strong>Example 01</strong>
+            <ul>
+                <li><a href="#">День второй. Хочу быть верстальщиком</a></li>
+                <li>День третий. Мой кот на меня обиделся</li>
+              </ul>
+        </section>
+        <section>
+            <h2>Relative addresses / Anchor link</h2>
+            <p>Для того чтобы предотвратить открытие файлов прямо в браузере, у тега <code>&lt;a&gt;</code> существует атрибут download, который поможет именно скачать файл.</p>
+            <p>Ссылка-якорь — это обычная ссылка, в адресе которой используется символ <code>#,</code> после которого следует идентификатор элемента. Идентификатор создаётся с помощью атрибута <code>id</code> у того тега, к которому надо перейти при щелчке по ссылке. Причём сам тег может быть любым: <code>&lt;h1&gt;</code>, <code>&lt;section&gt;</code> и так далее.</p>
+            <ul>
+                <li><a href="#" rel="noopener">Item Noopener</a></li>
+                <li><a href="inner.html" target="_blank">Item Page Target</a></li>
+                <li><a href="#" download>Item Download</a></li>
+                <li><a href="#content">Anchor link</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>img tag, image / SVG (Scalable Vector Graphics) / JPEG / PNG / GIF</h2>
+            <p>Итак, разберёмся с подключением изображений. Для этого существует тег <code>&lt;img&gt;</code>. Он одиночный, то есть, как мы уже знаем, не требует закрывающего тега. Сам по себе тег <code>&lt;img&gt;</code> бесполезен без своего атрибута <code>src</code>, который указывает путь к картинке.</p>
+            <strong>Example JPG</strong>
+            <p>
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/car.jpg" alt="car">
+            </p>
+            <p>
+                <b>Таким образом, формат JPEG лучше подходит для:</b>
+                <ul>
+                    <li>полноцветных изображений, фотографий;</li>
+                    <li>изображений с плавным переходом яркости и контраста;</li>
+                    <li>рисунков с большим количеством разноцветных деталей</li>
+                </ul>
+            </p>
+            <strong>Example SVG</strong>
+            <p>
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/raccoon.svg" alt="raccoon">
+            </p>
+            <p>
+                <b>То есть, формат SVG подходит если:</b>
+                <ul>
+                    <li>необходимо масштабировать изображение без потерь;</li>
+                    <li>изменять цвет элементов изображения;</li>
+                    <li>нужно анимировать части изображения.</li>
+                </ul>
+            </p>
+            <strong>Example PNG</strong>
+            <p>
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/portrait.png" alt="portrait">
+            </p>
+            <p>
+                <b>Итак, формат PNG подходит для:</b>
+                <ul>
+                    <li>изображений с прозрачностью и полупрозрачностью;</li>
+                    <li>полноцветных изображений, когда необходима повышенная точность;</li>
+                    <li>изображений с резкими переходами цветов.</li>
+                </ul>
+            </p>
+
+
+
+
+            <strong>Example GIF</strong>
+            <p>
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/gifka.gif" alt="gifka">
+            </p>
+            <p>
+                <b>Таким образом, формат GIF подходит если:</b>
+                <ul>
+                    <li>нужна простейшая анимация.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    <footer id="footer_id">
+        <h2>Footer</h2>
+        <section>
+            <p>
+                <a href="#content">Header</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

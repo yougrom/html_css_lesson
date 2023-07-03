@@ -1,0 +1,30 @@
+body {
+    padding: 0px 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Georgia", serif;
+    color: #222222;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  article {
+    background-color: #f9f7ff;
+    border: 2px solid #9779ec;
+    padding: 10px;
+}
+  header, section, footer, main {
+    background-color: #f3faff;
+    border: 2px solid #7fc1ff;
+    padding: 10px;
+    margin-top: 20px;
+}
+img{
+    width: 200px;
+    height: auto;
+}
