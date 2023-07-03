@@ -35,12 +35,18 @@
                 <li><a href="#content">Anchor link</a></li>
             </ul>
         </section>
-        <section>
+        <section id="image">
             <h2>img tag, image / SVG (Scalable Vector Graphics) / JPEG / PNG / GIF</h2>
+            <p>
+                <ul>
+                    <li>Image Sizes</li>
+                    <li>alt attribute</li>
+                </ul>
+            </p>   
             <p>Итак, разберёмся с подключением изображений. Для этого существует тег <code>&lt;img&gt;</code>. Он одиночный, то есть, как мы уже знаем, не требует закрывающего тега. Сам по себе тег <code>&lt;img&gt;</code> бесполезен без своего атрибута <code>src</code>, который указывает путь к картинке.</p>
             <strong>Example JPG</strong>
             <p>
-                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/car.jpg" alt="car">
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/car.jpg" alt="car" width="400px">
             </p>
             <p>
                 <b>Таким образом, формат JPEG лучше подходит для:</b>
@@ -52,7 +58,7 @@
             </p>
             <strong>Example SVG</strong>
             <p>
-                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/raccoon.svg" alt="raccoon">
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/raccoon.svg" alt="raccoon" width="300px">
             </p>
             <p>
                 <b>То есть, формат SVG подходит если:</b>
@@ -64,7 +70,7 @@
             </p>
             <strong>Example PNG</strong>
             <p>
-                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/portrait.png" alt="portrait">
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/portrait.png" alt="portrait" width="200px">
             </p>
             <p>
                 <b>Итак, формат PNG подходит для:</b>
@@ -74,13 +80,9 @@
                     <li>изображений с резкими переходами цветов.</li>
                 </ul>
             </p>
-
-
-
-
             <strong>Example GIF</strong>
             <p>
-                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/gifka.gif" alt="gifka">
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/gifka.gif" alt="gifka" width="100px">
             </p>
             <p>
                 <b>Таким образом, формат GIF подходит если:</b>
@@ -89,6 +91,26 @@
                 </ul>
             </p>
         </section>
+        <section>
+            <h2>Link Image</h2>
+            <p>Ссылки можно делать не только с помощью текста, но и с помощью изображений. Для этого нужно обернуть тег  <code>&lt;img&gt;</code> в тег <code>&lt;a&gt;</code>.</p>
+            <strong>Example GIF</strong>
+            <p>
+                <a href="#image"><img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/portrait.png" alt="portrait cat" width="400px" height="400px"></a>
+            </p>
+        </section>
+        <section>
+            <h2>figure and figcaption tags, demo</h2>
+            <figure>
+                <img src="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/keks-1.jpg" alt="keks" width="486px" height="315px">
+                <figcaption>Vigilant instructor Keks keeps order.</figcaption>
+            </figure>
+            <nav class="pagination">
+                <a href="/html_academy/courses/html_css/lec_1/html_trainings/links_and_img/img/portrait.png">&lt; Назад</a>
+                <a title="Фото в галерее закончились">Вперёд &gt;</a>
+              </nav>
+        </section>
+
     </main>
     <footer id="footer_id">
         <h2>Footer</h2>
