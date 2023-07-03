@@ -46,3 +46,31 @@ blockquote{
     border-left:2px solid #6a2cce;
     color: #6a2cce;
 }
+
+
+
+.danger-block {
+  padding: 5px 10px;
+
+  background-color: #ffd0bf;
+}
+
+.no-danger-block {
+  padding: 5px 10px;
+
+  background-color: #c6f5f0;
+}
+.danger-text {
+  color: #ff4400;
+}
+
+.course-interface--light .browser-view {
+  border-color: #d8d7e4;
+}
+.browser-view {
+  position: relative;
+  padding: 44px 32px 24px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+}
