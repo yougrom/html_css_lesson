@@ -14,7 +14,7 @@ body {
   }
   
   .avatar{
-    border-radius: 10px;
+    border-radius: 50%;
   }
 
   h2 {
@@ -28,24 +28,33 @@ body {
     text-decoration: underline;
   }
 
-  nav {
+
+  .blog-navigation a{
+    color:#fff;
+
+  }
+
+  .blog-navigation ul{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .blog-navigation h2{
+    margin-top: 0;
+  }
+
+  .blog-navigation li {
+    margin-bottom: 5px;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+
+  .blog-navigation  {
     margin-bottom: 30px;
     padding: 20px;
     color:#fff;
     background-color: #4470c4;
     border: 5px solid #2d508f;
-    
-  }
-  nav a{
-    color:#fff;
-
-  }
-
-  ul{
-    list-style: none;
-    padding-left: 0;
-  }
-
-  footer {
-    margin-top: 30px;
   }
