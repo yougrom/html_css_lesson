@@ -58,3 +58,21 @@ body {
     background-color: #4470c4;
     border: 5px solid #2d508f;
   }
+
+  .skills dd{
+    background-color:#e8e8e8;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+
+  .skills-level {
+    background-color:#4470c4;
+    color:#fff;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .skills-level-ok {
+    background-color: #47bb52;
+  } 
