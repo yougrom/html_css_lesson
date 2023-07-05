@@ -77,7 +77,11 @@ body {
   }
   
   .page-title {
-    font-size: 2.5em;
-    line-height: 42px;
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: 900;
+    text-align: center;
   }
-  
+  .avatar-container{
+    text-align: center;
+  }
