@@ -11,6 +11,7 @@ body {
   h1 {
     font-size: 24px;
     line-height: normal;
+    white-space: pre-wrap;
   }
   
   h2 {
@@ -21,6 +22,26 @@ body {
   a {
     color: #0099ef;
     text-decoration: underline;
+  }
+  
+  del {
+    color: #ff4400;
+  }
+  
+  ins {
+    color: rgb(105, 178, 83);
+  }
+  
+  .page-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+  }
+  
+  .avatar-container {
+    text-align: center;
   }
   
   .avatar {
@@ -72,16 +93,26 @@ body {
     background-color: #47bb52;
   }
   
+  .partnership {
+    margin: 30px 0;
+    padding: 30px;
+  
+    text-align: center;
+    color: #0099ef;
+    background-color: #4a87fa;
+  
+    background-image: url("img/bg-page.png");
+  }
+  
   footer {
     margin-top: 30px;
   }
   
-  .page-title {
-    font-size: 56px;
-    line-height: 120%;
-    font-weight: 900;
-    text-align: center;
+  .nowrap {
+    white-space: nowrap;
   }
-  .avatar-container{
-    text-align: center;
+  
+  .like-pre {
+    white-space: pre;
   }
+  
