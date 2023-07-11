@@ -1,0 +1,22 @@
+body {
+    width: 380px;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+li {
+    margin: 10px;
+    padding: 0 10px;
+  }
+ul.easy-tasks {
+    font-size: 18px;
+  }
+  .expensive-tasks  li {
+    border: 1px solid #000000;
+  }
+ul.unreal-tasks {
+    color: red;
+  }
+  
