@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div class="course-theory__content-text"><h2>Простейшая таблица</h2><p>Для описания простейшей таблицы необходимо использовать три тега:</p><ul><li>Тег <code>&lt;table&gt;</code> обозначает таблицу;</li><li>Тег <code>&lt;tr&gt;</code> расшифровывается как «table row», обозначает строку таблицы;</li><li>Тег <code>&lt;td&gt;</code> расшифровывается как «table data», обозначает ячейку внутри строки таблицы.</li></ul><p>Пример простейшей таблицы:</p><pre><code>&lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Ячейка 1.1&lt;/td&gt;
+          &lt;td&gt;Ячейка 1.2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Ячейка 2.1&lt;/td&gt;
+          &lt;td&gt;Ячейка 2.2&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;</code></pre><h2>Рамки таблиц</h2><p>Рамки по&nbsp;умолчанию отображаются, если у&nbsp;тега <code>&lt;table&gt;</code> задан атрибут <code>border</code> с&nbsp;ненулевым значением. При помощи атрибута <code>border</code> можно изменять только толщину рамок. Более гибко можно управлять рамками при помощи CSS.</p><p>По&nbsp;умолчанию браузер рисует рамки таблицы и&nbsp;рамки отдельных ячеек раздельно. Чтобы избавиться от&nbsp;таких двойных рамок, используется CSS-свойство таблицы <code class="nowrap">border-collapse</code>. Вот так:</p><pre><code>table {
+        border-collapse: collapse;
+      }</code></pre><p>Значение <code>collapse</code> убирает двойные рамки: схлопываются рамки соседних ячеек, а&nbsp;также рамки ячеек и&nbsp;внешняя рамка таблицы.</p><p>Для управления отдельными рамками необходимо использовать следующие свойства:</p><ul><li><code class="nowrap">border-top</code>&nbsp;— верхняя рамка;</li><li><code class="nowrap">border-right</code>&nbsp;— правая рамка;</li><li><code class="nowrap">border-bottom</code>&nbsp;— нижняя рамка;</li><li><code class="nowrap">border-left</code>&nbsp;— левая рамка.</li></ul><h2>Отступы внутри ячеек</h2><p>Отступы внутри ячеек можно добавлять с&nbsp;помощью атрибута <code>cellpadding</code> тега <code>&lt;table&gt;</code>, но&nbsp;лучше задавать отступы с&nbsp;помощью CSS.</p><p>CSS-свойство <code>padding</code> задаёт «внутренние отступы элемента» со&nbsp;всех сторон. Можно задавать отступы для каждой из&nbsp;сторон отдельно, используя свойства:</p><ul><li><code class="nowrap">padding-top</code>&nbsp;— отступ вверх;</li><li><code class="nowrap">padding-right</code>&nbsp;— отступ вправо;</li><li><code class="nowrap">padding-bottom</code>&nbsp;— отступ вниз;</li><li><code class="nowrap">padding-left</code>&nbsp;— отступ влево.</li></ul><h2>Отступы между ячейками</h2><p>Отступы между ячейками не&nbsp;работают с&nbsp;<code class="nowrap">border-collapse: collapse</code>.</p><p>Свойство <code class="nowrap">border-collapse: separate</code> является значением по&nbsp;умолчанию и&nbsp;«расклеивает» ячейки.</p><p>Отступы между ячейками можно задать с&nbsp;помощью атрибута <code>cellspacing</code> тега <code>&lt;table&gt;</code> или c&nbsp;помощью CSS-свойства <code class="nowrap">border-spacing</code>, которое задаётся для всей таблицы.</p>
+</head>
+<body>
+    
+</body>
+</html>
