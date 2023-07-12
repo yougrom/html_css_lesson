@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<section class="course-theory__content">
+
+</head>
+<body>
+    <h1 class="course-theory__content-heading course-theory__content-heading--synopsis">Конспект «Знакомство с&nbsp;таблицами». Раздел&nbsp;2</h1><div class="course-theory__content-text"><h2>Ячейки-заголовки</h2><p>Для выделения названий столбцов и&nbsp;строк предусмотрен тег <code>&lt;th&gt;</code>, который обозначает ячейку-заголовок.</p><p>По&nbsp;умолчанию текст внутри <code>&lt;th&gt;</code> выделяется жирным и&nbsp;выравнивается по&nbsp;центру ячейки.</p><h2>Заголовок таблицы</h2><p>Заголовок таблицы выделяется при помощи тега <code>&lt;caption&gt;</code>. Он&nbsp;должен размещаться внутри тега <code>&lt;table&gt;</code>, причём непосредственно внутри него и&nbsp;первым, до&nbsp;остальных вложенных тегов. Вот так:</p><pre><code>&lt;table&gt;
+        &lt;caption&gt;Текст&lt;/caption&gt;
+        ...
+      &lt;/table&gt;</code></pre><p>С&nbsp;помощью CSS можно переместить заголовок таблицы в&nbsp;любое место. По&nbsp;вертикали заголовок таблицы перемещается CSS-свойством <code class="nowrap">caption-side</code> со&nbsp;значениями <code>top</code> и&nbsp;<code>bottom</code>, которые обозначают до&nbsp;и&nbsp;после таблицы соответственно. По&nbsp;горизонтали заголовок таблицы выравнивается CSS-свойством <code class="nowrap">text-align</code> со&nbsp;значениями <code>left</code>, <code>right</code> и&nbsp;<code>center</code>.
+      
+      </p><h2>Объединение ячеек</h2><p>Чтобы объединить ячейки по&nbsp;горизонтали, необходимо использовать атрибут <code>colspan</code> у&nbsp;тегов <code>&lt;th&gt;</code> или <code>&lt;td&gt;</code>.</p><p>Если задать ячейке атрибут <code>colspan</code> со&nbsp;значением 2, то&nbsp;она как&nbsp;бы «растягивается» на&nbsp;ячейку справа, но&nbsp;та&nbsp;ячейка не&nbsp;исчезает, а&nbsp;отодвигается и&nbsp;в&nbsp;таблице появляется новый столбец. Чтобы удалить его, нужно удалить ячейку, которая находится справа от&nbsp;«растянутой».</p><p>Для объединения более двух ячеек точно так&nbsp;же используется атрибут <code>colspan</code>.</p><p>Объединение ячеек по&nbsp;вертикали осуществляется с&nbsp;помощью атрибута <code>rowspan</code> у&nbsp;тега <code>&lt;td&gt;</code> или <code>&lt;th&gt;</code>.</p><p>Если задать ячейке атрибут <code>rowspan</code> со&nbsp;значением 2, то&nbsp;она как&nbsp;бы «растягивается» на&nbsp;следующую строку. При этом ячейка, которая была под «растянутой» отодвигается в&nbsp;своей&nbsp;же строке вправо, что добавляет в&nbsp;таблицу лишний столбец. Удалив ячейку, которая была под «растянутой», мы&nbsp;избавимся от&nbsp;этого столбца.</p><p>Можно растягивать ячейку одновременно и&nbsp;по&nbsp;вертикали, и&nbsp;по&nbsp;горизонтали. Для этого нужно задать ячейке два атрибута: <code>rowspan</code> и&nbsp;<code>colspan</code>. Вытеснение соседних ячеек будет происходить так&nbsp;же, как и&nbsp;при обычном объединении ячеек.</p>
+</body>
+</html>

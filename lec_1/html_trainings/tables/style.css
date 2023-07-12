@@ -1,14 +1,55 @@
-table{
+/* =======================================
+First Table Red
+======================================= */
+table.first-table {
     border:1px solid red;
-    /* border-collapse: collapse;*/
     border-collapse: separate;
     border-spacing: 5px;
+    margin-bottom: 20px;
 }
 
-td{
+.first-table td {
    border:1px solid red;
    padding: 10px;
    padding-right: 20px;
-   /* border-bottom: 1px solid red;*/
+}
 
+/* =======================================
+Second Table Black
+======================================= */
+table.second-table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+  
+  .second-table td {
+    padding: 5px;
+    padding-right: 130px;
+    border: 1px solid lightgray;
+  }
+
+  /* стили для ячеек-заголовков */
+  .second-table th {
+    padding: 10px;
+    border: 2px solid black;
+  }
+  .second-table caption{
+    caption-side:bottom;
+    text-align: left;
+  }
+  
+/* =======================================
+Third Table Black
+======================================= */
+
+table.third-table{
+    border:1px solid blue;
+    margin-bottom: 20px;
+}
+
+.third-table td{
+    border:1px solid blue;
+    padding: 5px;
+    padding-right: 10px
 }
