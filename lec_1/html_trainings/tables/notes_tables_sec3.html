@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<section class="course-theory__content">
+</head>
+<body>
+    <h1 class="course-theory__content-heading course-theory__content-heading--synopsis">Конспект «Знакомство с&nbsp;таблицами». Раздел&nbsp;3</h1><div class="course-theory__content-text"><h2>Выравнивание содержимого в&nbsp;ячейках</h2><p>За&nbsp;выравнивание по&nbsp;горизонтали отвечает CSS-свойство <code class="nowrap">text-align</code>. Чаще всего используются значения <code>left</code>, <code>center</code> и&nbsp;<code>right</code>.</p><p>За&nbsp;выравнивание по&nbsp;вертикали отвечает CSS-свойство <code class="nowrap">vertical-align</code>. Чаще всего используются значения <code>top</code>, <code>middle</code> и&nbsp;<code>bottom</code>.</p><p>Чтобы задать выравнивание содержимого ячеек, надо в&nbsp;стилях указать:</p><pre><code>{
+        vertical-align: значение;
+        text-align: значение;
+      }</code></pre><p>Эти стили повлияют на&nbsp;все ячейки. Чтобы задать выравнивание только в&nbsp;определённых ячейках, нужно назначить им&nbsp;классы и&nbsp;определить стили для классов.</p><h2>Раскраска таблицы</h2><p>Таблицы можно раскрашивать, задавая цвет фона ячеек, фоновые изображения, цвет текста в&nbsp;ячейках, а&nbsp;также цвет рамок.</p><p>Чтобы задать цвета для ячейки в&nbsp;CSS, нужен такой код:</p><pre><code>td {
+        color: цвет;
+        background-color: цвет;
+        border: 1px solid цвет;
+      }</code></pre><p>Раскрашивать можно и&nbsp;<code>&lt;td&gt;</code>, и&nbsp;<code>&lt;th&gt;</code>, и&nbsp;даже <code>&lt;table&gt;</code>. Можно использовать классы и&nbsp;применять стили для этих классов.</p><h2>Размеры таблицы</h2><p>По&nbsp;умолчанию ширина и&nbsp;высота таблицы зависит от&nbsp;содержимого и&nbsp;отступов внутри ячеек. С&nbsp;помощью CSS можно управлять размерами таблицы, задавать желаемую ширину и&nbsp;высоту.</p><p>У&nbsp;таблицы есть минимальные размеры, которые зависят от&nbsp;содержания, меньше которых она не&nbsp;сожмётся, какое&nbsp;бы значение ширины или высоты ни&nbsp;задавалось.</p><p>Ширина таблицы задаётся с&nbsp;помощью CSS-свойства <code>width</code>, а&nbsp;высота с&nbsp;помощью свойства <code>height</code>, например:</p><pre><code>table {
+        width: 100px;
+        height: 100px;
+      }</code></pre><p>Размеры таблицы можно задавать как в&nbsp;абсолютных единицах, например, в&nbsp;пикселях&nbsp;— <code>20px</code>, так и&nbsp;в&nbsp;относительных, в&nbsp;процентах&nbsp;— <code>20%</code>.</p><p>При использовании процентов размеры таблицы будут вычисляться с&nbsp;учётом размеров родительского элемента: контейнера, окна мини-браузера, страницы.</p><p>Особое значение <code>auto</code> включает расчёт размеров по&nbsp;умолчанию. Например, <code class="nowrap">width: auto;</code> или <code class="nowrap">height: auto;</code>.</p><p>Проценты при задании высоты обычно не&nbsp;работают.</p><h2>Размеры отдельных ячеек и&nbsp;столбцов</h2><p>Размеры ячеек задаются с&nbsp;помощью CSS-свойств <code>width</code> и&nbsp;<code>height</code>.</p><p>Есть два варианта добавления стилей ячейкам:</p><ul><li>Назначать ячейкам уникальные имена классов и&nbsp;применять стили для этих классов;</li><li>Использовать атрибут <code>style</code>, внутри которого можно писать CSS-код.</li></ul><p>Пример второго варианта:</p><pre><code>&lt;td style="width: 100px;"&gt;
+        ...
+      &lt;/td&gt;</code></pre><p>Для того, чтобы вручную установить ширину столбцов достаточно задать ширину для каждой ячейки из&nbsp;первой строки.</p>
+</body>
+</html>

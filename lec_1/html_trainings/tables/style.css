@@ -53,3 +53,47 @@ table.third-table{
     padding: 5px;
     padding-right: 10px
 }
+
+/* =======================================
+Fourth Table Green
+======================================= */
+
+table.fourth-table{
+  border:1px solid green;
+  border-collapse:collapse;
+  margin-bottom: 200px;
+  width: 100%;
+  height: 300px;
+}
+.fourth-table th{
+  border:1px solid lightcoral;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.fourth-table td{
+  border:1px solid green;
+  padding: 10px;
+}
+.fourth-table .cell-1{
+  vertical-align: bottom;
+}
+.fourth-table .column-2{
+  text-align: right;
+}
+.fourth-table .column-3{
+  text-align: center;
+}
+.fourth-table caption {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.fourth-table .row-1{
+  background-color: aqua;
+}
+.fourth-table .row-2{
+  background-color: chartreuse;
+}
+.fourth-table .row-3{
+  background-color: lightpink;
+}
