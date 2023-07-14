@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    background-image: url('img/moon.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-attachment:fixed;
+}
+
+.block{
+    width: 200px;
+    height: 300px;
+    margin: 20px auto ; 
+    background-color:#34495e;
+    border-radius: 10%;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+}
+
+.block:nth-child(1){
+    background-image:url('img/cat_poo.png');
+}
+.block:nth-child(2){
+    background-image:url('img/cat_hiss.png');
+}
+.block:nth-child(3){
+    background-image:url('img/cat_fish.png');
+}
+.block:nth-child(4){
+    background-image:url('img/cat_clean.png');
+}
+.block:nth-child(5){
+    background-image:url('img/cat_drunk.png');
+}

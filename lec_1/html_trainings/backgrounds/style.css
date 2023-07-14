@@ -1,0 +1,104 @@
+body {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .block {
+    display: inline-block;
+    width: 192px;
+    height: 192px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999999;
+  }
+
+  /* ========================================
+  First Line
+  =========================================*/
+  .block1 {
+    background-color: #2ecc71;
+    background-image: url(img/cat_box.png);
+    background-repeat: repeat;
+  }
+  
+  .block2 {
+    background-color: #3498db;
+    background-image: url(img/cat_drunk.png);
+    background-repeat: repeat-x;
+  }
+  
+  .block3 {
+    background-color: #e74c3c;
+    background-image: url(img/cat_fish.png);
+    background-repeat: repeat-y;
+  }
+  
+  .block4 {
+    background-color: #e67e22;
+    background-image: url(img/cat_tied.png);
+    background-repeat: no-repeat;
+  }
+  
+
+/* ========================================
+  Second Line
+=========================================*/
+  .block1.block5{
+    background-repeat: no-repeat;
+    background-position:100% 50%;
+  }
+  .block2.block6{
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  .block3.block7{
+    background-repeat: no-repeat;
+    background-position:100px 50px;
+  }
+  .block4.block8{
+    background-repeat: no-repeat;
+  }
+
+
+/* ========================================
+  Fourth Line
+=========================================*/
+.section__block.block{
+    background-color: #34495e;
+    background-image:url(img/logo.svg);
+    background-repeat: no-repeat;
+}
+.block9{
+background-position:35px 35px;
+}
+.block10{
+background-position: -110px 35px;    
+}
+.block11{
+background-position: -75% 50%;
+}
+.block12{
+background-position: 170% 50%;
+}
+
+/* ========================================
+  Fifths Line
+=========================================*/
+
+.block_square{
+  width: 125px;
+  margin: 25px auto;
+  padding: 30px 0;
+  color: white;
+  box-shadow: 1px 1px 3px #666;
+  padding-left: 90px;border-radius: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.block__red{
+  background:#e74c3c url('img/cat_eyes.png') no-repeat 10px 5px;
+}
+.block__blue{
+  background:#2980b9 url('img/cat_fish.png') no-repeat 10px 5px;
+}
