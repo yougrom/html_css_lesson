@@ -1,0 +1,137 @@
+body{
+    background-image:url('img/moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-color:#000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+    text-align: center;
+}
+h2{
+    background-image: linear-gradient(to right, #2ecc71, #f1c40f);
+    padding:5px;
+    color:#fff;
+}
+/* ====================================
+Repeating background effects
+==================================== */
+
+.repeat{
+    background-color:#2ecc71;
+    border-radius: 5px;
+    height: 70px;
+    margin: 50px 70px;
+    background-repeat:no-repeat;
+}
+.repeat1{
+ background-image:url(img/stitch.png);   
+ background-repeat:repeat-x;
+ background-position: -30px 30px;
+ background-color:#2ecc71;
+}
+.repeat2{
+    background-image:url(img/zigzag.png);   
+    background-repeat:repeat-x;
+    background-position: 0px 10px;
+    background-color:#f1c40f;
+   }
+.repeat3{
+    background-image:url(img/shadow.png);   
+    background-repeat:repeat-x;
+    background-position: 0% 100%;
+   }
+
+
+/* ====================================
+Multiple backgrounds
+==================================== */
+.multiple1{
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+    box-shadow:1px 1px 3px #fff;
+    background:url('img/cows.jpg');
+}
+.multiple3{
+    background:url('img/cat_walk.png');
+    background-repeat:no-repeat;
+    width: 256px;
+    height: 256px;
+    background-position:100% 100%;
+}
+.multiple2{
+    background:url('img/fence.png');
+    background-repeat:no-repeat;
+    width: 256px;
+    height: 256px;
+}
+
+/* ====================================
+JPG
+==================================== */
+.box{
+    width: 300px;
+    height: 140px;
+    box-shadow: 1px 1px 3px #999999;
+    margin: 20px auto;
+}
+.box1{
+    background-color: #2ecc71;
+}
+.box2{
+    background-color: #f1c40f;
+}
+.box3{
+    background-image: linear-gradient(to bottom, #2ecc71, #f1c40f);
+}
+.block{
+    height: 135px;
+    background-image:url('img/cat_cage_low.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* ====================================
+PNG-8
+==================================== */
+.block__png{
+    height: 135px;
+    background-image:url('img/cat_cage_8_no_mate.png');
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+}
+
+/* ====================================
+PNG-24
+==================================== */
+.block__png-24{
+    height: 135px;
+    background-image:url('img/cat_cage_png24.png');
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+}
+
+/* ====================================
+GIF
+==================================== */
+.column{
+    width: 300px;
+    height: 140px;
+    box-shadow: 1px 1px 3px #fff;
+    margin: 20px auto;
+    background-color:#fff;
+    border-radius: 10px;;
+}
+.item1{
+    height: 140px;
+    background-image:url('img/cat_purr.gif');
+    background-repeat: no-repeat;
+    background-position:50%;
+}
+.item2{
+    height: 140px;
+    background-image:url('img/cat_walk.gif');
+    background-repeat: no-repeat;
+    background-position:50%;
+}
