@@ -135,3 +135,56 @@ GIF
     background-repeat: no-repeat;
     background-position:50%;
 }
+
+/* ====================================
+Sprites
+==================================== */
+.full-sprite{
+    height: 200px;
+    margin: 50px auto;
+    background: #2ecc71 url('img/bootstrap-sprites.png') no-repeat 50% 50%;
+    border-radius:5px;
+}
+
+.btn{
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    padding: 12px;
+    border-radius:5px;
+    color: #fff;
+    border:0;
+    font: inherit;
+    text-align: left;
+}
+.btn-add{
+    background-color: #f1c40f;
+}
+.btn-add:hover, .btn-remove:hover{
+    background-color: #2ecc71;
+}
+.btn-edit{
+    background-color:#2ecc71;
+}
+.btn-edit:hover{
+    background-color:#f1c40f;
+}
+.btn-remove{
+    background-color: #f1c40f;
+}
+.icon{
+    background-image:url('img/bootstrap-sprites.png');
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0px 5px;
+}
+.icon-add{
+    background-position:-407px -96px;;
+}
+.icon-edit {
+    background-position: -96px -72px;
+  }
+  .icon-remove {
+    background-position: -456px 0;
+  }
