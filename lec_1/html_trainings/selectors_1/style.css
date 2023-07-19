@@ -1,0 +1,53 @@
+/* ==================
+Main settings
+==================== */
+body{
+    background-image: url('img/shooter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.target{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+    background-color:white;
+    padding: 12px 15px;
+    margin: 0;
+    list-style: none;
+    border-radius:2px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+}
+li{
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ====================================
+class selectors
+====================================== */
+.sec__first.first, .sec__first.fifth {
+    background-color: white;
+  }
+.sec__first .second {
+    background-color: yellow;
+  }
+  .sec__first .third, .sec__first .fourth {
+    background-color: red;
+  }
+
