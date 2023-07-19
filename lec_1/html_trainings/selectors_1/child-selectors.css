@@ -1,0 +1,43 @@
+/* ==================
+Main settings
+==================== */
+body{
+    background-image: url('img/finish.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+.places{
+    background-color:rgba(255, 255, 255, 0.9);
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    box-shadow: 2px 2px 6px #666;
+}
+li {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+ul{
+    list-style: none;
+}
+ul ul {
+    margin-left: 150px;
+    font-size: 0.8em;
+}
+.places > li {
+    border-bottom: 2px solid #cccccc;
+}
+.places > li > span {
+    font-weight: bold;
+}
