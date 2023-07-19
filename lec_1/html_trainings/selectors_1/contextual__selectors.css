@@ -1,0 +1,59 @@
+/* ==================
+Main settings
+==================== */
+body{
+    background-image: url('img/shooters.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.target{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+    background-color:white;
+    padding: 12px 15px;
+    margin: 0;
+    list-style: none;
+    border-radius:2px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+}
+li{
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.shooter-2 .target{
+    top: 110px;
+}
+
+/* ==================
+Colors 
+==================== */
+.shooter-1 .first,
+.shooter-1 .third,
+.shooter-1 .fourth  {
+  background-color: white;
+  }
+
+.shooter-1 .second,
+.shooter-1 .fifth {
+  background-color: red;
+  }
+
+.shooter-2 .first {
+  background-color: red
+  }
+.shooter-2 .second,
+.shooter-2 .third,
+.shooter-2 .fourth,
+.shooter-2 .fifth {
+  background-color: white;
+  }
