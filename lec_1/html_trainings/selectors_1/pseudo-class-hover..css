@@ -8,6 +8,7 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    background-attachment: fixed;
 }
 h1 {
     margin: 0;
@@ -51,3 +52,40 @@ table {
   strong:hover {
     color: #0088cc;
 }
+
+/* ==================
+Dynamic effects with :hover
+==================== */
+.section-2 em {
+    display: none;
+}
+  .section-2 tr:hover em {
+    display: inline;
+}
+  .section-2 tr:hover strong {
+    color: #0088cc;
+}
+
+/* ==================
+Pseudo-classes for links
+==================== */
+.sec__linls a:link{
+    color: black;
+    }
+.sec__linls a:visited{
+      color: #cccccc;
+      }
+.sec__linls a:active{
+    color: green;
+      }
+.sec__linls{
+    background-color:white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+      }
+.sec__linls p{
+    margin: 12px 10px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #ccc;
+      }
