@@ -1,0 +1,64 @@
+body {
+    font-family: "PT Sans",sans-serif;
+    display: block;
+    margin: 8px;
+}
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+.battle, .cat, h1 {
+    text-align: center;
+}
+.battle, h1 {
+    margin: 20px auto;
+    width: 360px;
+}
+.battle {
+    position: relative;
+    padding: 20px;
+}
+.battle, .cat {
+    box-shadow: 0 0 3px #999;
+}
+.battle::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cat-keksik {
+    float: left;
+    background-color: #2980b9;
+    background-image: url('img/cat-walk.svg');
+}
+.cat-rudolf {
+    float: right;
+    background-color: #c0392b;
+    background-image: url('img/cat-grumpy.svg');
+}
+.cat{
+    width: 100px;
+    height: 200px;
+    background-repeat: no-repeat;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    background-position: 50% 80%;
+    background-size: 60px;
+}
+.chicken{
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    width: 70px;
+    height: 70px;
+    background: white url('img/chicken.png') no-repeat 50% 50%;
+    border-radius:50%;
+    box-shadow: 0 0 3px #cb7628;
+}
+.to-rudolf {
+  margin-left: 120px;
+}
+.to-keksik {
+  margin-left: -120px;
+}
