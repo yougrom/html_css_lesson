@@ -1,0 +1,21 @@
+body {
+    font-family: "PT Sans", sans-serif;
+}
+li {
+    margin-bottom: 30px;
+}
+pre{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:5px 10px;
+    background-color: aliceblue;
+    width:300px;
+} 
+input[type="text"]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 50px;
+    padding: 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
