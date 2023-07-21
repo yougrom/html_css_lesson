@@ -1,3 +1,7 @@
+/* =======================================
+Who will get a chicken?
+======================================= */
+
 body {
     font-family: "PT Sans",sans-serif;
     display: block;
@@ -56,9 +60,38 @@ h1 {
     border-radius:50%;
     box-shadow: 0 0 3px #cb7628;
 }
-.to-rudolf {
-  margin-left: 120px;
-}
 .to-keksik {
-  margin-left: -120px;
+    margin-left: -120px;
+  }
+.to-rudolf {
+    margin-left: 120px;
+  }
+
+/* =======================================
+Another task for specificity
+======================================= */
+#floor{
+position: relative;
+width: 250px;
+text-align: center;
+padding: 50px;
+border-radius: 5px;
+margin: 0 auto;
+box-shadow: 0 0 3px #999999;
 }
+.cat-in-box{
+display: block;
+width: 100px;
+height: 100px;
+margin: 0 auto;
+background-image:url('img/cat-walk.svg');
+padding: 10px;
+background-size:64px;
+background-repeat:no-repeat;
+background-position:50% 80%;
+box-shadow: 0 0 3px #999999;
+border-radius: 5px;
+}
+#floor .cat-in-box {
+    background-color: bisque; /* Мокрый асфальт */
+  }
