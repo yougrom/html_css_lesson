@@ -20,3 +20,59 @@ input[type="text"]{
     margin-left: 5px;
     color: blue;
 }
+
+
+/* =======================================
+code order task
+======================================= */
+section{
+    margin-top: 100px;
+}
+.box, .boxes{
+    text-align: center;
+    box-shadow: 0 0 3px #999;
+    border-radius:5px;
+}
+.boxes{
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 64px;
+    background-position: 50% 80%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    color:#fff;
+    vertical-align: top;
+
+}
+.cat-keksik{
+    background-image: url('img/cat-walk.svg');
+}
+.cat-rudolf{
+    background-image:url('img/cat-grumpy.svg');
+}
+.cat-snezhok{
+    background-image: url('img/cat-w.svg');
+}
+.cat-keksik {
+    background-color: #e74c3c; /* Красный */
+  }
+.box {
+    background-color: #bdc3c7; /* Серый */
+  }
+.cat-rudolf {
+    background-color: #3498db; /* Синий */
+  }
+.cat-keksik {
+    background-color: #e74c3c; /* Красный */
+  }
+.cat-snezhok {
+    background-color: #2ecc71; /* Зелёный */
+  }
