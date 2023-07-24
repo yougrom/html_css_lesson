@@ -3,3 +3,18 @@ table, tr, td{
     border:1px solid #ccc;
     padding: 10px;
 }
+
+#section__form table,
+#section__form tr,
+#section__form td{
+    border-collapse: collapse;
+    padding: 10px;
+    border:none;
+}
+
+.multiline__input input[type="submit"],
+.multiline__input input[type="checkbox"],
+.multiline__input label {
+    display: block;
+    margin-top: 10px;
+}
