@@ -8,25 +8,44 @@
 </head>
 <body>
     <section>
+        <h2>Multiselect</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <p>В мультиселекте можно выбрать несколько вариантов, щёлкая по ним с зажатой клавишей Ctrl на Windows или Command на MacOS.</p>
+      
+            <p><i>Любимые дни недели:</i></p>
+            <select name="days" multiple size="7">
+              <option>Понедельник</option>
+              <option>Вторник</option>
+              <option>Среда</option>
+              <option>Четверг</option>
+              <option>Пятница</option>
+              <option>Суббота</option>
+              <option selected>Воскресенье</option>
+            </select><br>
+            <br>
+            <input type="submit" value="Отправить">
+          </form>
+        <br>
+        <hr>
+    </section>
+    <section>
         <h2>Drop-down list, or "select"</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
             <p>Часто выпадающие списки используют для выбора даты.</p>
-      
             <p><i>Ваш год рождения</i></p>
-            <!-- добавьте селект сюда --> 
             <select name="year">
               <option value="2000"> 2000 год</option>
               <option value="2001"> 2001 год</option>
             </select>
             <input type="submit" value="Отправить">
           </form>
+          <br>
+          <hr>
     </section>
-
     <section>
         <h2>Radio button</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
             <p>В тестах часто встречаются задания типа «выберите один из предложенных вариантов».    </p>
-      
             <p><i>Какой тег обозначает «абзац»?</i></p>
             <label>
               <input type="radio" name="question-one" value="p"> Тег &lt;p&gt;
@@ -36,9 +55,10 @@
               <input type="radio" name="question-one" value="b" checked>
               Тег &lt;b&gt;
             </label>
-      
             <input type="submit" value="Отправить">
           </form>
+          <br>
+          <hr>
     </section>
     <section>
         <h1>Login form</h1>
@@ -63,6 +83,8 @@
             </tr>
         </table>
     </form>
+    <br>
+    <hr>
     <section style="margin-top: 50px;">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
             <label for="login-field">Ваш логин</label>
@@ -75,6 +97,8 @@
             <br>
             <input type="submit" value="Enter">
           </form>
+          <br>
+          <hr>
     </section>
     <section style="margin-top: 50px;" id="section__form">
     <form>
@@ -101,6 +125,8 @@
             </tr>
         </table>
     </form>
+    <br>
+    <hr>
     </section>
     <section class="multiline__input">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -112,6 +138,7 @@
             <label for="subscribe-field">Privacy Policy</label>
             <input type="submit" value="Отправить">
           </form>
+          <br>
     </section>
 </body>
 </html>
