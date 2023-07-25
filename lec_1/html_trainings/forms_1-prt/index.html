@@ -8,10 +8,21 @@
 </head>
 <body>
     <section>
+        <h2>File upload field</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+            <p>Выберите изображение для своего аватара:</p>
+            <!-- Добавьте поле сюда -->
+            <input type="file" name="avatar"><br>
+            <br>
+            <input type="submit" value="Загрузить">
+          </form>
+        <br>
+        <hr>
+    </section>
+    <section>
         <h2>Multiselect</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
             <p>В мультиселекте можно выбрать несколько вариантов, щёлкая по ним с зажатой клавишей Ctrl на Windows или Command на MacOS.</p>
-      
             <p><i>Любимые дни недели:</i></p>
             <select name="days" multiple size="7">
               <option>Понедельник</option>
