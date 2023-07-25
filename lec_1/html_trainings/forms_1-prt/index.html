@@ -8,6 +8,19 @@
 </head>
 <body>
     <section>
+        <h2>Hidden field</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <label>
+              Сумма платежа:
+              <input type="text" name="amount" value="500"> руб.
+            </label>
+            <input type="hidden" name="account_number" value="15">
+            <input type="submit" value="Оплатить">
+          </form>
+        <br>
+        <hr>
+    </section>
+    <section>
         <h2>File upload field</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
             <p>Выберите изображение для своего аватара:</p>
