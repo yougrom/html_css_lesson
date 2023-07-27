@@ -17,7 +17,46 @@
         <div class="buttons">
           <input type="submit" value="Войти">
           <input type="reset" value="Сбросить">
-          <!-- Кнопка сброса -->
+          <input type="button" value="Кнопка">
+                  <!-- Кнопка-изображение -->
+        <input type="image" value="Войти" alt="Войти" src="img/enter.png">
+        </div>
+        <div class="buttons">
+            <button type="submit">Войти <img src="img/enter-light.png"></button>
+        </div>
+      </form>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" value="Кекс" required>
+        <label for="address">Адрес доставки</label>
+        <textarea id="address" name="address" rows="2" required>ул. Хвостенко, д. 1</textarea>
+        <div class="half-width">
+          <label for="date">Дата доставки</label>
+          <input type="date" id="date" name="date" value="2023-12-12">
+        </div>
+        <div class="half-width">
+          <label for="time">Время доставки</label>
+          <input type="time" id="time" name="time" value="12:00">
+        </div>
+        <div class="half-width">
+          <label for="dish">Блюдо</label>
+          <input type="text" list="dishes" id="dish" name="dish" value="Курочка">
+          <datalist id="dishes">
+            <option value="Мясо"></option>
+            <option value="Рыба"></option>
+            <option value="Курочка"></option>
+            <option value="Индейка"></option>
+            <option value="Мыши"></option>
+            <option value="Молоко"></option>
+          </datalist>
+        </div>
+        <div class="half-width">
+          <label for="amount">Количество</label>
+          <input type="number" name="amount" id="amount" min="5" max="50" step="5">
+          <!-- Поле для ввода числового значения -->
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Заказать">
         </div>
       </form>
     </main>

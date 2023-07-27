@@ -58,6 +58,26 @@ body {
     display: flex;
     flex-direction: column;
 }
+.page-footer::before {
+    content: "Gromov, yg@berlinacademy.de";
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    margin-right: 0.5em;
+    line-height: 45px;
+    white-space: nowrap;
+    text-indent: 70px;
+    background: url("img/yg.jpg") no-repeat 0 0;
+    background-size: 50px;
+    border: 2px solid white;
+    box-shadow: 0 0 4px #c0392b;
+}
+.page-footer::after {
+    content: "© 2023 Grom Energy";
+    float: right;
+    padding-top: 20px;
+    font-size: 12px;
+}
 /* =======================
 Style.CSS
 ====================== */
@@ -68,6 +88,7 @@ form {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px #cccccc;
+    margin-top:20px;
   }
   label {
     display: block;
@@ -78,7 +99,8 @@ form {
   border-radius: 5px;
 }
 input[type="text"],
-input[type="password"]{
+input[type="password"],
+textarea{
 width: 95%;
 border:1px solid #ccc;
 height: 24px;
@@ -86,15 +108,41 @@ margin-bottom:10px;
 padding: 2px 5px;
 }
 input[type="submit"],
-input[type="reset"]{
+input[type="reset"],
+input[ type="button"],
+button{
     display: inline-block;
     background-color:#2c3e50;
     color: #fff;
-    padding: 8px 20px;
+    padding: 8px 18px;
     border:none;
     margin: 0 5px;
+    border-radius:5px;
 }
 .buttons {
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: center;
+}
+input[type="image"] {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    vertical-align: top;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  textarea {
+    border-radius: 5px;
+}
+.half-width input {
+    display: inline-block;
+    width: 90%;
+    margin-right: -4px;
+    border:1px solid #ccc;
+    padding: 5px;
+    height: 24px;
+}
+.half-width {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
 }
