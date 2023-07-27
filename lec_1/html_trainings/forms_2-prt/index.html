@@ -8,6 +8,7 @@
   <body>
     <header class="page-header">Форма логина</header>
     <main>
+        <h2>Buttons</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <label for="name">Имя</label>
         <input type="text" id="name" name="name" value="Кексик">
@@ -25,6 +26,7 @@
             <button type="submit">Войти <img src="img/enter-light.png"></button>
         </div>
       </form>
+      <h2>Inputs</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <label for="name">Имя</label>
         <input type="text" id="name" name="name" value="Кекс" required>
@@ -41,7 +43,7 @@
         <div class="half-width">
           <label for="dish">Блюдо</label>
           <input type="text" list="dishes" id="dish" name="dish" value="Курочка">
-          <datalist id="dishes">
+          <datalist id="dishes" autofocus>
             <option value="Мясо"></option>
             <option value="Рыба"></option>
             <option value="Курочка"></option>
@@ -59,6 +61,16 @@
           <input type="submit" value="Заказать">
         </div>
       </form>
+      <h2>Search</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="search">Название города</label>
+        <input type="search" name="search" id="search" autofocus>
+        <!-- Поле для поиска -->
+        <div class="buttons">
+          <input type="submit" value="Забронировать">
+        </div>
+      </form>
+
     </main>
     <footer class="page-footer"></footer>
   </body>
