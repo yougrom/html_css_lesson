@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal data form</title>
+    <link rel="stylesheet" href="index-forms-3.css">
+    <link rel="stylesheet" href="layout_for_header_footer.css">
+</head>
+<body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Заявление на получение визы</legend>
+          <label for="passport">Номер котопаспорта</label>
+          <!-- Текстовое поле ввода -->
+          <input type="text" name="passport" pattern="[0-9]{3}-[0-9]{5}" required placeholder="Формат номера X-XXX-XXX" autocomplete="off">
+          <label for="tel">Номер телефона</label>
+           <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="Формат номера X-XXX-XXX" tabindex="2">
+           <div class="half-width">
+            <label for="email">Email</label>
+            <input type="email" name="email" autocomplete="on" required tabindex="3">
+            <!-- Поле ввода электронной почты -->
+          </div>
+          <div class="half-width">
+            <label for="url">Личный сайт</label>
+            <!-- Поле ввода адреса сайта -->
+            <input type="url" name="url" required readonly placeholder="readonly">
+          </div>
+          <div class="one-third-width">
+            <label for="color">Окрас</label>
+            <!-- Поле ввода цвета -->
+            <input type="color" name="color">
+          </div>
+          <div class="two-third-width">
+            <label for="food">Любимая еда</label>
+            <select id="food" name="food" multiple tabindex="1">
+            <optgroup label="Вкуснятина">
+              <option value="meat">Мясо</option>
+              <option value="fish">Рыба</option>
+              <option value="chi">Курочка</option>
+              <option value="ind">Индейка</option>
+            </optgroup>
+            <optgroup label="Сойдёт">
+              <option value="mice">Мыши</option>
+              <option value="milk">Молоко</option>
+              <option value="kef">Кефир</option>
+              <option value="water">Вода</option>
+              <option value="smet">Сметана</option>
+             </optgroup>
+            </select>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="Оформить">
+        </div>
+      </form>
+      <h2>localStorage</h2>
+
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="note">Текст заметки</label>
+        <textarea id="note" name="note" rows="9">!Пойми, в Норвегии только и говорят, что о море. Как оно бесконечно прекрасно… О закате, который они видели… О том, как солнце, погружаясь в волны, стало алым как кровь. И почувствовали, что море впитало энергию светила в себя, и солнце было укрощено, и огонь уже догорал в глубине.</textarea>
+        <div class="buttons">
+          <input type="submit" value="Сохранить">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
+    <script>
+        if (window.localStorage) {
+          var elements = document.querySelectorAll('[name]');
+  
+          for (var i = 0, length = elements.length; i < length; i++) {
+            (function(element) {
+              var name = element.getAttribute('name');
+  
+              element.value = localStorage.getItem(name) || element.value;
+  
+              element.onkeyup = function() {
+                localStorage.setItem(name, element.value);
+              };
+            })(elements[i]);
+          }
+        }
+      </script>
+  </body>
+</html>
