@@ -11,6 +11,7 @@
     <main>
         <h2>Other fields for entering dates</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
+        
         <label for="search">Название города</label>
         <input type="search" id="search" name="search" value="Осло, Норвегия">
         <div class="one-third-width">
@@ -28,6 +29,32 @@
         </div>
       </form>
       <h2>Select from a range</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="daysoutput.value=dayscount.value">
+        <fieldset>
+          <legend>Поиск отеля</legend>
+        <label for="search">Название города</label>
+        <input type="search" id="search" name="search" value="Осло, Норвегия">
+        <div class="one-third-width">
+          <label for="day">Число</label>
+          <input type="number" min="1" max="31" id="day" name="day" value="17">
+        </div>
+        <div class="two-third-width">
+          <label for="month">Месяц</label>
+          <input type="month" id="month" name="month" value="2023-09">
+        </div>
+        <div class="half-width">
+          <label for="dayscount">Количество дней</label>
+          1 <input type="range" id="dayscount" name="dayscount" min="1" max="14" step="1"> 14
+        </div>
+        <div class="half-width output-area">
+          <output name="daysoutput"></output>
+          <!-- Область для вывода значения -->
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Забронировать">
+        </div>
+      </fieldset>
+      </form>
     </main>
     <footer class="page-footer"></footer>
 </body>
