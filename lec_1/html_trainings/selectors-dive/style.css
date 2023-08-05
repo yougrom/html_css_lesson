@@ -142,7 +142,7 @@ ul:nth-last-child(3) li {
 
 /*========================
 Practice - Pseudo-class :first-of-type
-=========================*/
+=========================
 ul li:first-of-type{
     background-color:#ff3300;
     }
@@ -151,4 +151,44 @@ ul li:first-of-type{
   }
   ul:first-of-type li:first-of-type{  
   background-color:#0099ff;
+  }*/
+
+  /*========================
+Practice - Pseudo-class :last-of-type
+=========================
+ul li:last-of-type {
+    background-color:#ff3300;
   }
+  ul:last-of-type  li{
+    background-color:#339933;
+  }
+  ul:last-of-type  li:last-of-type{
+    background-color:#0099ff;
+  }*/
+
+/*========================
+Practice - Pseudo-class :nth-of-type
+=========================
+ul:nth-of-type(even) li{
+    background-color:#ff3300;
+    }
+  ul:nth-of-type(3) li:nth-of-type(3){
+    background-color:#339933;
+    }
+  ul:nth-of-type(1) li:nth-of-type(odd){
+    background-color:#0099ff;
+    }*/
+
+/*========================
+Practice - Pseudo-class :nth-of-type
+=========================*/
+ul:nth-last-of-type(2) li {
+    background-color:#ff3300;
+    }
+  li:nth-last-of-type(2) {
+    background-color:#339933;
+    }
+    
+  ul:nth-last-of-type(2) li:nth-last-of-type(2) {
+    background-color:#0099ff;
+    }
