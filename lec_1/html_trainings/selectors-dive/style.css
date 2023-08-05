@@ -87,15 +87,29 @@ li {
     background-image: url(img/spade.svg);
 }
 
-/*Practice*/
+/*========================
+Practice - Combining Selectors
+=========================
 .spade.queen {
     background-color: #ff3300;
   }
-  
   .heart:first-child {
     background-color: #339933;
   }
-  
   .diamond.ace:last-child {
     background-color: #0099ff;
+  }
+*/
+
+/*========================
+Practice - Pseudo-class :not
+=========================*/
+li:not(.king){
+  background-color:#808080;
+  }
+li:not(.diamond){
+  color:#0099ff;
+  }
+li:not(:first-child){
+  font-family:"Arial", sans-serif;
   }
