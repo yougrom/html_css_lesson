@@ -103,7 +103,7 @@ Practice - Combining Selectors
 
 /*========================
 Practice - Pseudo-class :not
-=========================*/
+=========================
 li:not(.king){
   background-color:#808080;
   }
@@ -112,4 +112,34 @@ li:not(.diamond){
   }
 li:not(:first-child){
   font-family:"Arial", sans-serif;
-  }
+  }*/
+
+/*========================
+Practice - Combine :not
+=========================
+li:first-child:not(.spade){
+background-color:#ff3300;
+}
+li:nth-child(4):not(.ace):not(.diamond){
+background-color:#339933;
+}
+.heart:not(:first-child):not(.queen):not(.jack){
+background-color:#0099ff;
+}*/
+
+/*========================
+Practice - Combine :not
+=========================
+ul:nth-last-child(3) li {
+  background-color: #ff3300;
+}
+.cards li:nth-last-child(2) {
+  background-color: #339933;
+}
+.cards:nth-last-child(3) li:nth-last-child(2) {
+  background-color: #0099ff;
+}*/
+
+/*========================
+Practice - Combine :not
+=========================*/
