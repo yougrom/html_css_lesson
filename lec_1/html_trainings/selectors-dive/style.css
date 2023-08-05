@@ -141,5 +141,14 @@ ul:nth-last-child(3) li {
 }*/
 
 /*========================
-Practice - Combine :not
+Practice - Pseudo-class :first-of-type
 =========================*/
+ul li:first-of-type{
+    background-color:#ff3300;
+    }
+  ul:first-of-type li{  
+  background-color:#339933;
+  }
+  ul:first-of-type li:first-of-type{  
+  background-color:#0099ff;
+  }
