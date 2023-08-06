@@ -1,0 +1,31 @@
+section{
+    margin-top: 50px;
+}
+/*===============
+Follower selector
+==================
+.king + li{
+    background-color:#ff3300;
+    }
+.heart.jack ~ .ace{
+    background-color:#339933;
+    }
+.club.king ~ .heart.jack{
+    background-color:#0099ff;
+    }*/
+/*===============
+Pseudo-class :empty
+==================*/
+ul:empty {
+    height: 70px;
+    border: 2px dashed #55bb99;
+  }
+  
+  li:not(:empty) {
+    width: 60px;
+    height: 90px;
+  }
+  
+  li:not(:empty) span {
+    display: block;
+  }
