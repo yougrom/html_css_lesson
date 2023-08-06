@@ -15,17 +15,43 @@ Follower selector
     }*/
 /*===============
 Pseudo-class :empty
-==================*/
+==================
 ul:empty {
     height: 70px;
     border: 2px dashed #55bb99;
   }
-  
   li:not(:empty) {
     width: 60px;
     height: 90px;
   }
-  
   li:not(:empty) span {
     display: block;
+  }*/
+/*===============
+Pseudo-class :only-child
+==================
+.queen.heart:only-child{
+    width:60px;
+    height:90px;
+  }
+.group ul:only-child{
+    padding:10px;
+    border:2px dashed #55bb99;
+  }*/
+/*===============
+Pseudo-class :only-of-type
+==================*/
+.paper{
+    background-color:#fff;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2px 15px ;
+    margin-top: 20px;
+}
+ul:only-of-type{
+  padding:10px;
+  border:2px dashed #55bb99;
+  }
+.paper p:only-of-type{
+  color:#339966;
   }
