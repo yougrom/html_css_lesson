@@ -4,6 +4,20 @@ body {
     padding: 50px 0;
     background: rgb(19, 77, 18) url(img/fabric.png) repeat 0 0;
 }
+/*=========== Header ============*/
+.header{
+    border:1px solid red;
+    margin-bottom: 50px;
+}
+.header__item{
+    display: inline-block;
+    margin: 0 auto;
+}
+.header__list{
+    margin: 0;
+    
+}
+/*=========== Cards ============*/
 .cards{
     list-style: none;
     margin: 0 10px;
@@ -129,16 +143,16 @@ background-color:#0099ff;
 
 /*========================
 Practice - Combine :not
-=========================
+=========================*/
 ul:nth-last-child(3) li {
   background-color: #ff3300;
 }
-.cards li:nth-last-child(2) {
+ul li:nth-last-child(2) {
   background-color: #339933;
 }
 .cards:nth-last-child(3) li:nth-last-child(2) {
   background-color: #0099ff;
-}*/
+}
 
 /*========================
 Practice - Pseudo-class :first-of-type
@@ -180,8 +194,8 @@ ul:nth-of-type(even) li{
     }*/
 
 /*========================
-Practice - Pseudo-class :nth-of-type
-=========================*/
+Practice - Псевдокласс :nth-last-of-type
+=========================
 ul:nth-last-of-type(2) li {
     background-color:#ff3300;
     }
@@ -191,4 +205,4 @@ ul:nth-last-of-type(2) li {
     
   ul:nth-last-of-type(2) li:nth-last-of-type(2) {
     background-color:#0099ff;
-    }
+    }*/
