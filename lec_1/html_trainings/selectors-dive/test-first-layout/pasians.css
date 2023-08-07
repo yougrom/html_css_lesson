@@ -1,3 +1,7 @@
+/*===========================
+TEST VARIATION
+===========================
+
 html,
 body {
   margin: 0;
@@ -42,7 +46,6 @@ selector {
   border-radius: 5px;
 }
 
-
 selector {
   background-color: #ffcc33;
 }
@@ -60,5 +63,76 @@ selector {
 }
 
 selector {
+  background-color: #996666;
+}*/
+
+
+/*===========================
+RESULT VARIATION
+===========================*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-width: 550px;
+  min-height: 250px;
+  padding: 10px;
+}
+
+.cards {
+  position: relative;
+  width: 380px;
+  text-align: left;
+}
+
+.cards li {
+  width: 37px;
+  height: 55px;
+}
+
+.cards li::before {
+  font-family: "Courier", monospace;
+}
+
+li:nth-of-type(n) {
+  margin-left: -20px;
+}
+ul::after {
+  content: "";
+  position: absolute;
+  right: 23px;
+  top: 0;
+  display: block;
+  width: 37px;
+  height: 55px;
+  border: 1px dashed #33bb33;
+  border-radius: 5px;
+}
+ul:nth-of-type(n){
+  padding-left: 23px;
+}
+
+
+li:nth-child(4n+1) {
+  background-color: #ffcc33;
+}
+
+li:nth-child(4n+2) {
+  background-color: #0099ff;
+}
+
+li:nth-child(4n+4):not(.five){
+  background-color: #ff3300;
+}
+
+ul:nth-of-type(3) li:nth-child(3n+8)  {
+  background-color: #339933;
+}
+
+ul:first-of-type li:nth-child(even){
   background-color: #996666;
 }
