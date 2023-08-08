@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        E-mail: <input name="email" type="text"><br>
+        <br>
+        Password: <input name="password" type="password"><br>
+        <br>
+        Password (again): <input name="confirmation" type="password"><br>
+        <br>
+        I agree to the terms and conditions: <input name="agreement" type="checkbox"><br>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        var form = getElementById('form');
+
+        form.ansubmit = function() {
+
+            if (form.email.value == '')
+            {
+                alert('You must provide your email adrss!');
+                return false;
+            }
+
+            else if (form.password.value == '')
+            {
+                alert('You must provide a password!');
+                return false; 
+            }
+            else if (form.password.value != form.confirmation.value)
+            {
+                alert('Password do not much!');
+                return false;
+            }
+            else if (!form.agreement.checked)
+            {
+                alert('You must agree to the terms an conditions!');
+                return false;
+            }
+
+            return true;
+
+        };
+
+    </script>
+</body>
+</html>
