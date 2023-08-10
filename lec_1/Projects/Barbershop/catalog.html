@@ -22,7 +22,7 @@
                 <li class="login-link">Enter</li>
             </ul>
         </nav>
-    </header>
+    </header> 
 <main class="container">
     <h1 class="page-titel">Care products</h1>
     <ul class="breadcrumbs">
@@ -32,109 +32,147 @@
     </ul>
     <section class="filters">
         <h2 class="visually-hidden">Product filter</h2>
-        <!--Here will be filter-->
+        <form class="filter" action="#" method="get">
+            <fieldset>
+                <legend>Producers</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-boxter-of-california" type="checkbox" name="boxter-of-california" checked>
+                        <label for="filter-boxter-of-california">Boxter of California</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-mr-natty" type="checkbox" name="mr-natty">
+                        <label for="filter-mr-natty">Mr Natty</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-suavesito" type="checkbox" name="suavesito" checked>
+                        <label for="filter-suavesito">Suavesito</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-la" type="checkbox" name="la">
+                        <label for="filter-la">LA</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-berlin-crew" type="checkbox" name="berlin-crew">
+                        <label for="filter-berlin-crew">Berlin Crew</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-go-go-go" type="checkbox" name="go-go-go" checked>
+                        <label for="filter-go-go-go">Go Go Go</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Groups of the Products</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" id="radio-schaving" type="radio" name="product-group" value="for-schaving">
+                        <label for="radio-schaving">Schaving</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" id="radio-cere-products" type="radio" name="product-group" value="for-cere-products">
+                        <label for="radio-cere-products">Cere Products</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" id="radio-accessery" type="radio" name="product-group" value="for-accessery">
+                        <label for="radio-accessery">Accessery</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="filter-button button" type="submit">Schow</button>
+        </form>
+
     </section>
     <section class="catalog">
         <h2 class="visually-hidden">List of care products</h2>
         <ul class="catalog-list">
             <li class="catalog-item">
+            <a href="catalog-item.html">
                 <h3>
-                    <a href="catalog-item.html">
-                        <span class="catalog-category">Travel set</span>
-                        <span class="catalog-item-titel">"Borodinski"</span>
-                    </a>
+                    <span class="catalog-category">Travel set</span>
+                    <span class="catalog-item-titel">"Borodinski"</span>
                 </h3>
                 <p class="catalog-item-image">
-                    <a href="catalog-item.html">
-                        <img src="img/photo-001.jpg" width="220" height="165" alt="Travel set - Borodinski">
-                    </a>
+                    <img src="img/photo-001.jpg" width="220" height="165" alt="Travel set - Borodinski">
                 </p>
-                <p>
+            </a>
+                <p class="catalog-item-price">
                     <b>10€</b>
                     <a href="#" class="button">Buy</a>
                 </p>
             </li>
             <li class="catalog-item">
+            <a href="catalog-item.html">
                 <h3>
-                    <a href="catalog-item.html">
-                        <span class="catalog-category">Liquid soap</span>
-                        <span class="catalog-item-titel">"America style"</span>
-                    </a>
+                    <span class="catalog-category">Liquid soap</span>
+                    <span class="catalog-item-titel">"America style"</span>
                 </h3>
                 <p class="catalog-item-image">
-                    <a href="catalog-item.html">
                         <img src="img/photo-002.jpg" width="220" height="165" alt="Liquid soap - America style">
-                    </a>
                 </p>
-                <p>
+            </a>
+                <p class="catalog-item-price">
                     <b>20€</b>
                     <a href="#" class="button">Buy</a>
                 </p>
             </li>
             <li class="catalog-item">
+            <a href="catalog-item.html">
                 <h3>
-                    <a href="catalog-item.html">
-                        <span class="catalog-category">Beard Gel</span>
-                        <span class="catalog-item-titel">"America style"</span>
-                    </a>
+                    <span class="catalog-category">Beard Gel</span>
+                    <span class="catalog-item-titel">"America style"</span>
                 </h3>
                 <p class="catalog-item-image">
-                    <a href="catalog-item.html">
                         <img src="img/photo-003.jpg" width="220" height="165" alt="Beard Gel - America style">
-                    </a>
                 </p>
-                <p>
+            </a>
+                <p class="catalog-item-price">
                     <b>30€</b>
                     <a href="#" class="button">Buy</a>
                 </p>
             </li>
             <li class="catalog-item">
+            <a href="catalog-item.html">
                 <h3>
-                    <a href="catalog-item.html">
-                        <span class="catalog-category">Hair Gel</span>
-                        <span class="catalog-item-titel">"CREW"</span>
-                    </a>
+                    <span class="catalog-category">Hair Gel</span>
+                    <span class="catalog-item-titel">"CREW"</span>
                 </h3>
                 <p class="catalog-item-image">
-                    <a href="catalog-item.html">
                         <img src="img/photo-004.jpg" width="220" height="165" alt="Hair Gel - CREW">
-                    </a>
                 </p>
-                <p>
+            </a>
+                <p class="catalog-item-price">
                     <b>40€</b>
                     <a href="#" class="button">Buy</a>
                 </p>
             </li>
             <li class="catalog-item">
+            <a href="catalog-item.html">
                 <h3>
-                    <a href="catalog-item.html">
-                        <span class="catalog-category">Hair Oil</span>
-                        <span class="catalog-item-titel">"CREW"</span>
-                    </a>
+                    <span class="catalog-category">Hair Oil</span>
+                    <span class="catalog-item-titel">"CREW"</span>
                 </h3>
                 <p class="catalog-item-image">
-                    <a href="catalog-item.html">
                         <img src="img/photo-005.jpg" width="220" height="165" alt="Hair Oil - CREW">
-                    </a>
                 </p>
-                <p>
+            </a>
+                <p class="catalog-item-price">
                     <b>50€</b>
                     <a href="#" class="button">Buy</a>
                 </p>
             </li>
             <li class="catalog-item">
+            <a href="catalog-item.html">
                 <h3>
-                    <a href="catalog-item.html">
-                        <span class="catalog-category">Kit for beauty</span>
-                        <span class="catalog-item-titel">"CREW"</span>
+                    <span class="catalog-category">Kit for beauty</span>
+                    <span class="catalog-item-titel">"CREW"</span>
                     </a>
                 </h3>
                 <p class="catalog-item-image">
-                    <a href="catalog-item.html">
                         <img src="img/photo-006.jpg" width="220" height="165" alt="Kit for beauty - CREW">
-                    </a>
                 </p>
-                <p>
+            </a>
+                <p class="catalog-item-price">
                     <b>100€</b>
                     <a href="#" class="button">Buy</a>
                 </p>

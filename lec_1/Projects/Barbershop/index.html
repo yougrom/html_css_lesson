@@ -20,7 +20,9 @@
                 <li><a href="contacts.html ">Contacts</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class="login-link">Enter</li>
+                <li class="login-link">
+                    <a class="login-link" href="login.html">Enter</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -60,10 +62,10 @@
      <section class="gallery">
         <h2>Gallery</h2>
         <figure class="gallery-content">
-            <a href="#"><img src="#" width="286" height="164" alt="Img-001 "></a>
+            <a href="#"><img src="img/Layer 21.jpg" width="286" height="164" alt="Img"></a>
         </figure>
-        <span class="button gallery-button gallery-button-back">Back</span>
-        <span class="button gallery-button gallery-button-next">Next</span>
+        <button class="button gallery-button gallery-button-back" type="button">Back</button>
+        <button class="button gallery-button gallery-button-next" type="button">Next</button>
      </section>
      <section class="contacts">
         <h2>Contacts Information</h2>
@@ -83,7 +85,25 @@
      <section class="appointment">
         <h2>Make an appointment</h2>
         <p class="appointment-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis facere vel, ut recusandae eum labore sunt laborum deleniti voluptatem laudantium delectus voluptates minima.</p>
-        <!--Here will be Form-->
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-item">
+                    <label for="appointment-date">Date</label>
+                    <input type="text" name="date" value="" id="appointment-date" placeholder="09.08.2023">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-time">Time</label>
+                    <input type="text" name="time" value="" id="appointment-time" placeholder="10:00">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-name">Name</label>
+                    <input type="text" name="name" value="" id="appointment-name" placeholder="Grom">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-phone">Phone</label>
+                    <input type="tel" name="phone" value="" id="appointment-phone" placeholder="0176 712-30-334">
+                </p>
+                <button class="button" type="submit">Send</button>
+        </form>
      </section>
 </main>
 <footer class="main-footer">
@@ -109,12 +129,31 @@
 <section class="modal modal-login">
     <h2>My Kabinet</h2>
     <p>Enter your Login & Pass </p>
-    <!--Here will be  Form-->
-    <span class="modal-close">x</span>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label class="visually-hidden" for="user-login">Login</label>
+            <input type="text" class="login-icon-user" id="user-login" name="login" placeholder="Login">
+        </p>
+        <p>
+            <label class="visually-hidden" for="user-pasword">Password</label>
+            <input type="password" class="password-icon-user" id="user-pasword" name="password" placeholder="password">
+        </p>
+        <p class="login-passord-info">
+            <label for=""></label>
+            <input type="checkbox" class="visually-hidden" id="login-passord-info" name="remember">Remember Me!
+            <a href="#" class="restore">I foget the password!</a>
+        </p>
+        <button class="button" type="submit">Enter</button>
+    </form>
+    <button class="modal-close" type="button">Close</button>
 </section>
+
 <section class="modal modal-map">
-    <h2 class="visually-hidden">How you can reach us</h2>
-    <span class="modal-close">x</span>
+    <h2 class="visually-hidden">How you can reach us - Berlin, Tegel </h2>
+    <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Offis of the company - map">
+    </p>
+    <button class="modal-close" type="button">Close</button>
 </section>
 </body>
 </html>
