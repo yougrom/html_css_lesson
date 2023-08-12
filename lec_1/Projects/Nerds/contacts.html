@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="appointment-item">
+            <label class="visually-hidden" for="user-name">Name</label>
+            <input class="name-user-fild" type="text" name="name" id="user-name" placeholder="Your Name">
+        </p>
+        <p class="appointment-item">
+            <label class="visually-hidden" for="user-business">Business</label>
+            <input class="business-user-fild" type="text" name="business" id="user-business" placeholder="Your Business">
+        </p>
+        <p class="appointment-item">
+            <label class="visually-hidden" for="user-phone">Phone</label>
+            <input class="tel-user-fild" type="tel" name="phone" id="user-phone" placeholder="Your Phone">
+        </p>
+        <p class="appointment-item">
+            <label class="visually-hidden" for="user-email">E-mail</label>
+            <input class="email-user-fild" type="email" name="email" id="user-email" placeholder="Your E-mail">
+        </p>
+        <label class="visually-hidden" for="textarea-message">Message</label><br>
+        <textarea name="" id="textarea-message" cols="30" rows="5" placeholder="Tell us something"></textarea>
+        <p class="appointment-item">
+            <input class="visually-hidden checkbox-accept-icon" type="checkbox" name="" id="checkbox-accept">
+            <label class="visually-hidden" for="checkbox-accept">We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. By clicking “Accept,“ you agree to our website's cookie use as described in our Privacy Policy.</label>
+        </p>
+        <button class="button" type="submit">Send</button>
+    </form>
+</body>
+</html>

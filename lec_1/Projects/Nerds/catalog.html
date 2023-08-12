@@ -9,17 +9,19 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a href="start.html" class="main-header-logo">
+            <a class="main-header-logo">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds Logo">
             </a>
             <ul class="site-navigatin">
                 <li><a href="#" class="menu__link">Studio</a></li>
                 <li><a href="#" class="menu__link">Klients</a></li>
-                <li><a href="catalog.html" class="menu__link menu__link-activ ">Shop</a></li>
-                <li><a href="#" class="menu__link">Contacts</a></li>
+                <li><a href="catalog.html" class="menu__link">Shop</a></li>
+                <li><a href="contacts.html" class="menu__link">Contacts</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class="cart">Cart</li>
+                <li class="cart-link">
+                    <a class="cart-link" href="cart.html">Cart</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -28,21 +30,70 @@
             <h1 class="page-title">Store of ready-made templates</h1>
         </section>
         <section class="filters">
-            <!--Here I will add the Form-->
-            <div class="range">
-                <label for="pricecount" class="uppercase">Prise:</label>
-                <input type="range" id="pricecount" name="pricecount" min="0" max="15000" step="100">     <div class="half-width output-area">
-                    <output name="pricecount"></output>
-                </div>
-                <div class="half-width output-area">
-                    <output name="pricecount"></output>
-                </div>
-            </div>
+            <form class="filter" method="get" action="#">
+                <fieldset>
+                    <!--Here I will add range later-->
+                    <legend>Prise:</legend> 
+                    <div class="range">
+                        <label for="pricecount" class="uppercase">Prise:</label>
+                        <input type="range" id="pricecount" name="pricecount" min="0" max="15000" step="100">              <div class="half-width output-area">
+                            <output name="pricecount"></output>
+                        </div>
+                        <div class="half-width output-area">
+                            <output name="pricecount"></output>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Grid:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grid" id="filter-adaptiv">
+                            <label for="filter-adaptiv">Adaptiv</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grid" id="filter-fixed" checked>
+                            <label for="filter-fixed">Fixed</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grid" id="filter-rubber">
+                            <label for="filter-rubber">Rubber</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Features:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                            <label for="filter-slider">Slider</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+                            <label for="filter-advantage-block">Advantage Block</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                            <label for="filter-news">News</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Gallery</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                            <label for="filter-basket">Basket</label>
+                        </li>
+                    </ul>
+                </fieldset> 
+                <button type="submit">Schow</button>
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Our Works</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
+                <a href="catalog-item.html">
                     <div class="catalog__header">
                         <ul class="catalog__header-list">
                             <li>1</li>
@@ -56,8 +107,10 @@
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
+                </a> 
                 </li>
                 <li class="catalog-item">
+                <a href="catalog-item.html">
                     <div class="catalog__header">
                         <ul class="catalog__header-list">
                             <li>1</li>
@@ -71,8 +124,10 @@
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
+                </a> 
                 </li>
                 <li class="catalog-item">
+                <a href="catalog-item.html">
                     <div class="catalog__header">
                         <ul class="catalog__header-list">
                             <li>1</li>
@@ -86,8 +141,10 @@
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
+                </a>
                 </li>
                 <li class="catalog-item">
+                <a href="catalog-item.html">
                     <div class="catalog__header">
                         <ul class="catalog__header-list">
                             <li>1</li>
@@ -101,8 +158,10 @@
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
+                </a>
                 </li>
                 <li class="catalog-item">
+                <a href="catalog-item.html">
                     <div class="catalog__header">
                         <ul class="catalog__header-list">
                             <li>1</li>
@@ -116,8 +175,10 @@
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
+                </a>
                 </li>
                 <li class="catalog-item">
+                <a href="catalog-item.html">
                     <div class="catalog__header">
                         <ul class="catalog__header-list">
                             <li>1</li>
@@ -131,6 +192,7 @@
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
+                </a>
                 </li>
             </ul>
             <ul class="pagination-list">
