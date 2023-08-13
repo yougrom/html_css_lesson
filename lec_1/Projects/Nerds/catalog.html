@@ -30,18 +30,17 @@
             <h1 class="page-title">Store of ready-made templates</h1>
         </section>
         <section class="filters">
-            <form class="filter" method="get" action="#">
+            <form class="filter" method="post" action="https://echo.htmlacademy.ru/courses" oninput="daysoutput.value=dayscount.value">
                 <fieldset>
                     <!--Here I will add range later-->
                     <legend>Prise:</legend> 
                     <div class="range">
                         <label for="pricecount" class="uppercase">Prise:</label>
-                        <input type="range" id="pricecount" name="pricecount" min="0" max="15000" step="100">              <div class="half-width output-area">
-                            <output name="pricecount"></output>
+                        <input type="range" id="dayscount" name="dayscount" min="0" max="15000" step="100">
+                         <div class="half-width output-area">
+                            <output name="daysoutput"></output>
                         </div>
-                        <div class="half-width output-area">
-                            <output name="pricecount"></output>
-                        </div>
+
                     </div>
                 </fieldset>
                 <fieldset>
@@ -103,7 +102,7 @@
                     </div>
                     <img src="img/img-sedona.jpg" width="360" height="576" alt="img-sedona">
                     <div class="overlay">
-                        <h3 class="catalog-title">Sedona</h3>
+                        <h2 class="catalog-title">Sedona</h2>
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
@@ -120,7 +119,7 @@
                     </div>
                     <img src="img/img-pink.jpg" width="360" height="576" alt="img-sedona">
                     <div class="overlay">
-                        <h3 class="catalog-title">Sedona</h3>
+                        <h2 class="catalog-title">Sedona</h2>
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
@@ -137,7 +136,7 @@
                     </div>
                     <img src="img/img-mishka.jpg" width="360" height="576" alt="img-sedona">
                     <div class="overlay">
-                        <h3 class="catalog-title">Sedona</h3>
+                        <h2 class="catalog-title">Sedona</h2>
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
@@ -154,7 +153,7 @@
                     </div>
                     <img src="img/img-kvast.jpg" width="360" height="576" alt="img-sedona">
                     <div class="overlay">
-                        <h3 class="catalog-title">Sedona</h3>
+                        <h2 class="catalog-title">Sedona</h2>
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
@@ -171,7 +170,7 @@
                     </div>
                     <img src="img/img-barbershop.jpg" width="360" height="576" alt="img-sedona">
                     <div class="overlay">
-                        <h3 class="catalog-title">Sedona</h3>
+                        <h2 class="catalog-title">Sedona</h2>
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
@@ -188,7 +187,7 @@
                     </div>
                     <img src="img/img-aplus.jpg" width="360" height="576" alt="img-sedona">
                     <div class="overlay">
-                        <h3 class="catalog-title">Sedona</h3>
+                        <h2 class="catalog-title">Sedona</h2>
                         <p class="catalog-text">Information site for tourists</p>
                         <a href="#" class="button button__red">990€</a>
                     </div>
@@ -196,13 +195,24 @@
                 </li>
             </ul>
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item_current"><a href="#">1</a></li>
+                <li class="pagination-item pagination-current"><a href="#">1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#">4</a></li>
             </ul>
         </section>
-        <footer class="main-footer">
+        <section class="contact-map">
+            <img src="img/map.jpg" class="contact-map_background" alt="Büro in Bernauer str. 111 Tegel">
+            <div class="contact-data">
+                <h2>NЁRDS DESIGN STUDIO</h2>
+                <p>
+                    Kyiv, st. Bolshaya Korasevskaya 19/8<br>
+                    Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a> 
+                </p>
+                <a href="#" class="button button__red">Right to us</a>
+            </div>
+         </section>
+         <footer class="main-footer">
             <div class="footer-copyright">
                 <b>Let's be friends, it's profitable!</b>
                 <p>10% discount for friends from social networks.</p> 
@@ -214,7 +224,7 @@
                     <li><a href="" class="sosial-button">Instagram</a></li>
                  </ul>
             </div>
-         </footer> 
+         </footer>
     </main>
 </body>
 </html>

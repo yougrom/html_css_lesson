@@ -10,4 +10,12 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+  }*/
+  .output-area output {
+    padding: 5px 5px;
+    font-family: "Roboto", sans-serif;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+}
