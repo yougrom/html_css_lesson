@@ -36,7 +36,7 @@ section.photo-2 {
   }
 .photo-2 span {
     position: absolute;
-    top: 530px;
+    bottom: -230px;
     left: 290px;
     color: #cb454c;
     font-size: 150px;
@@ -135,31 +135,130 @@ section.photo-3 {
       position: relative;
       top:20px;
     }
-/*=========== Section 5 - text-indent | ::first-letter | ::first-line ===============*/
-section.photo-5{
+/*=========== Section 5 / 6 - text-indent | ::first-letter | ::first-line | column-count | column-gap | text direction |  ===============*/
+section.photo-5, section.photo-6{
   background-image: url("img/road.jpg");
   background-size:cover;
   padding:10px;
   margin-top: 20px;
 }
-.photo-5 article {
+.photo-5 article, .photo-6 article{
   padding: 10px;
   background-color: rgba(240, 240, 240, 0.85);
   color:#333;
-  max-width: 800px;;
   margin: 0 auto;
   position: relative;
   top:10px;
 }
+.photo-5 article {
+  max-width: 800px;
+  /*column-count:2;Колоночная разметка*/
+  column-width:200px;
+  column-gap:50px;
+}
 .photo-5 p {
   margin: 0;
   line-height: 26px;
-  text-indent:24px;
+  text-indent:0px;
 }
 .photo-5 p:first-child::first-letter {
   float:left;
   font-family:"Georgia", serif;
   font-size:76px;
   line-height:60px;
+  color:#8b3333;
+} 
+.photo-5 p:first-child::first-line{
+  font-weight: bold;
 }
-/*=========== Section 6 - text-indent ===============*/
+/* Section 6 text direction */
+.photo-6 article {
+  max-width: 600px;
+  direction: rtl;
+  height: 250px;
+  overflow: auto;
+}
+.photo-6  p {
+  margin-top: 0;
+  unicode-bidi: bidi-override;
+}
+/*=========== Section 7 - direction in table ===============*/
+.photo-7 {
+  background: url("img/bokeh.jpg") no-repeat 0% 10%;
+  padding: 10px;
+  color: #333333;
+  font-size: 14px;
+  font-family: "Georgia", sans;
+  margin-top: 20px;
+}
+.photo-7 article {
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.85);
+}
+.photo-7 table {
+  border-collapse: collapse;
+  direction:rtl;
+}
+.photo-7  tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.photo-7 td {
+  padding: 10px 15px;
+  border-right: 1px dashed #cccccc;
+}
+.photo-7 td:first-child {
+  text-align: right;
+  font-style: italic;
+}
+
+.photo-7 td:last-child {
+  border-right: none;
+}
+/*=========== Section 8 - text-overflow ===============*/
+.photo-8 {
+  background: url("img/road.jpg") no-repeat 0% 10%;
+  padding: 10px;
+  color: #333333;
+  font-family: "Georgia", sans;
+  margin-top: 20px;
+}
+.photo-8 p {
+  margin: 50px auto;
+  padding: 20px;
+  width: 50%;
+  background-color: rgba(240, 240, 240, 0.85);
+  font-size: 16px;
+  line-height: 22px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+/*=========== Section 9 - Spacing between words ===============*/
+.photo-9 {
+  background: url("img/road.jpg") no-repeat 0% 10%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #fffbb4;
+  font-size: 12px;
+  height: 450px;
+}
+.photo-9 h1 {
+  text-align: center;
+  font-size: 24px;
+  word-spacing:5px;
+}
+.photo-9 ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  word-spacing:12px;
+  max-width: 700px;
+  margin: 0 auto;  
+}
+.photo-9 li {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.photo-9 img {
+  width: 250px;
+}
