@@ -1,5 +1,4 @@
 /*=========== Block 1 ===============*/
-
 body {
     position: relative;
     width: 570px;
@@ -7,7 +6,6 @@ body {
     color: #000000;
     font-family: "Arial", sans-serif;
   }
-  
   p {
     margin: 0;
     padding-top: 235px;
@@ -20,9 +18,7 @@ body {
     color:rgba(255, 0, 180, 0.5);
     text-shadow: 
           -5px -5px 0 rgba(0, 168, 255, 0.5);
-    
   }
-  
   span {
     position: absolute;
     top: -40px;
@@ -36,5 +32,32 @@ body {
           -140px 0px 0 #0085c7,
           140px 0px 0 #df0024
     }
-  
-  
+  /*=========== Block 2 ===============*/
+  .block-2{
+    background: url(img/football.jpg) 50% no-repeat;
+    width: 570px;
+    height: 300px;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    margin-top: 50px;
+  }
+  h1 {
+    position: relative;
+    margin: 0;
+    padding-left: 40px;
+    width: 320px;
+    word-wrap:break-word;
+    font-size:80px;
+    text-transform:uppercase;
+    font-weight:400;
+    line-height:1.25em;
+    letter-spacing:40px;
+    text-shadow:-5px 5px 0 rgba(0, 0, 0, 0.5); 
+  }
+
+  .block-2 h1::before{
+    position: relative;
+    content: "●";
+    font-size: 90px;
+    color: #ffffff;
+  }
