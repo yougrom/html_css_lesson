@@ -4,6 +4,7 @@
     <title>Изображения в формате SVG</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -22,13 +23,34 @@
     <main>
         <article class="about-me">
             <h1>About me</h1>
+            <section class="profile">
+              <p>Меня зовут Grom. Я кот и веб-разработчик.</p>
+              <p><small>Живу в Berlin и работаю в GROM Academy консультантом по созданию учебных курсов.</small></p>
+            </section>
+            <aside class="last-actions">
+              <ul>
+                <li>Зачекинился на кухне <time>час назад</time></li>
+                <li>Принесли немного еды <a href="#catfood">#catfood</a> <time>два часа назад</time></li>
+                <li>Зачекинился в ванной <time>вчера</time></li>
+              </ul>
+            </aside>
         </article>
         <section class="posts">
             <h2>Last posts</h2>
+            <article class="featured-post">
+              <h3><a href="#post-1">Чешуя на градиентах</a></h3>
+          <p>В этом посте я расскажу как делать повторяющийся чешуйчатый фон на CSS-градиентах. Будем использовать градиенты в сочетании со свойством <code>background-size</code>.</p>
+            </article>
         </section>
     </main>
     <footer class="page-footer">
-      Footer
+      <div class="info">
+        <img src="img/keks.jpg" width="50" alt="Портрет Groma">
+        Grom, youriy.gromov@gmail.com
+      </div>
+      <div class="copyright">
+        © 2023-2024 Grom Energy
+      </div>
     </footer>
   </body>
 </html>
