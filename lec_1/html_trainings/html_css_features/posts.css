@@ -1,0 +1,51 @@
+/* Основное содержание */
+
+.post {
+    margin: 0 20px;
+  }
+  
+  .post h1 {
+    margin: 0;
+  }
+  
+  .post time {
+    margin-bottom: 1em;
+    font-size: 11px;
+    color: #999999;
+  }
+  
+  .post .intro {
+    margin: 1em 0;
+    padding: 10px;
+    background-color: rgba(241, 196, 15, 0.1);
+    border-radius: 5px;
+  }
+  
+  .post .intro p {
+    margin: 0;
+  }
+  
+  .post .content {
+    min-height: 200px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .post .content h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+  }
+
+  .post .example {
+  height: 150px;
+  background-color: silver;
+  background-image:
+    radial-gradient(circle at 100% 150%, silver 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, silver 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50% 100%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, silver 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0 50%, silver 49%, transparent 50%, transparent);
+  background-repeat: repeat;
+  background-size: 50px 25px;
+}
