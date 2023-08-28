@@ -4,23 +4,100 @@ body {
     padding-left: 20px;
   }
   
-  .block {
+  .section__block .block {
     background-color: rgba(0, 255, 255, 0.2);
   }
   
   /* Стили блоков */
-  .block-1 {
+  .section__block .block-1 {
   margin-top:40px;
   padding-bottom:20px;
   width:180px;
   }
   
-  .block-2 {
+ .section__block .block-2 {
   margin-top:40px;
   margin-left:100px;
   padding-bottom:80px;
   border:10px solid white;
   width:180px;
-  
   }
   
+  /*================== Section 2 - Form =================*/
+  .section__form .block {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .section__form input[type="text"] {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #666666;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+
+  /*================== Section 3 - Test =================*/
+  /* Базовые стили, изменять не нужно */
+.section__border-box .block {
+    background-color: rgba(0, 255, 255, 0.2);
+  }
+  
+  /* Пользовательские стили */
+  .section__border-box .block-1 {
+  border:20px solid white;
+  }
+  
+  .section__border-box .block-2 {
+  padding:20px;
+  margin:20px;
+  }
+  
+  .section__border-box .text-input {
+  box-sizing:border-box;
+  }
+  /*================== Section 4  =================*/
+  .column {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    display:inline-block;
+    vertical-align:bottom;
+    width:100px;
+  }
+  
+  .column-1 {
+    height: 40px;
+  }
+  
+  .column-2 {
+    height: 60px;
+  }
+  
+  .column-3 {
+    height: 80px;
+  }
+
+    /*================== Section 4 - Table =================*/
+    div {
+        margin: 5px;
+        padding: 5px;
+        border: 1px dotted white;
+      }
+      
+      .table {
+        background-color: #d9edf7;
+        border-color: #3a87ad;
+        display: table
+      }
+      
+      .row {
+        background-color: #f2dede;
+        border-color: #b94a48;
+      }
+      
+      .cell {
+        background-color: #fbeed5;
+        border-color: #c09853;
+      }
+      
