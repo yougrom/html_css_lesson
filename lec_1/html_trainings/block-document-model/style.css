@@ -1,0 +1,26 @@
+/* Базовые стили, изменять не нужно */
+body {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .block {
+    background-color: rgba(0, 255, 255, 0.2);
+  }
+  
+  /* Стили блоков */
+  .block-1 {
+  margin-top:40px;
+  padding-bottom:20px;
+  width:180px;
+  }
+  
+  .block-2 {
+  margin-top:40px;
+  margin-left:100px;
+  padding-bottom:80px;
+  border:10px solid white;
+  width:180px;
+  
+  }
+  
