@@ -1,0 +1,108 @@
+body {
+    min-width: 550px;
+    font-family: Georgia, Times, serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.page-header {
+    padding-right: 20px;
+    background-image: url("img/header_bg.png");
+    background-repeat: repeat-x;
+    border: 1px solid transparent;
+}
+
+.title {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.accent {
+    font-weight: 400;
+    color: rgb(218, 58, 174);
+}
+
+.quote {
+    min-height: 100px;
+    margin: 0px;
+    padding: 20px 0px 0px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url("img/heart_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 120px 120px;
+}
+
+.quote cite {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.days-list {
+    list-style: none;
+}
+
+.day {
+    padding: 20px;
+    background-color: rgb(249, 246, 248);
+    border: 1px solid rgb(244, 234, 241);
+    border-radius: 4px;
+}
+
+.day h2 {
+    position: relative;
+    margin: 0px 0px 10px;
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(218, 58, 174);
+}
+
+.day h2::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    box-shadow: rgba(151, 104, 136, 0.4) 0px 1px 3px;
+}
+
+.day-1 h2::before {
+    background-image: url("img/day1_icon.svg");
+}
+
+.day-2 h2::before {
+    background-image: url("img/day2_icon.svg");
+}
+
+.day-3 h2::before {
+    background-image: url("img/day3_icon.svg");
+}
+
+.day-4 h2::before {
+    background-image: url("img/day4_icon.svg");
+}
+
+.day p {
+    margin: 0px;
+}
+
+.page-footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(209, 159, 194);
+}
