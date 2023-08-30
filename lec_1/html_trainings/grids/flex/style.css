@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+  }
+  
+.page-main {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+.bio {
+    width: 270px;
+    padding: 10px;
+    }
+  
+.photo {
+    width: 200px;
+    padding: 10px;
+    }
+  
