@@ -1,0 +1,25 @@
+.room {
+    display: flex;
+    height: 150px;
+    /*flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;*/
+    flex-direction: column-reverse;
+  }
+
+/*=====================
+justify-content
+/*=====================*/
+.room-1 {
+  flex-direction: row;
+  justify-content: space-evenly;/*отступы между элементами и краями контейнера были одинаковыми.*/
+}
+
+.room-2 {
+  flex-direction: row;
+  justify-content: space-around;/*равномерное распределение с половинными отступами по краям.*/
+}
+.room-3 {
+    flex-direction: row;
+    justify-content: space-between; /*равномерное распределение вдоль главной оси без отступов по краям*/
+  }

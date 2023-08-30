@@ -1,0 +1,47 @@
+body, ul{
+    margin:0;
+  }
+  
+  .page-main{
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+    
+  .doors-list{
+    width:320px;
+    display:flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    padding:20px 10px 40px;
+    }
+  
+  .door{
+    width:100px;
+  }
+  
+  .container{
+    display:flex;
+    width: 550px;
+    padding:5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .note-1{
+    width:150px;
+  }
+  
+  .note-2{
+    width:200px;
+    margin-left:25px;
+    margin-top:auto;
+    margin-bottom:auto;
+  }
+  
+  .note-3{
+    width:100px;
+    margin-left:auto;
+    margin-top:auto;
+  }
+  
