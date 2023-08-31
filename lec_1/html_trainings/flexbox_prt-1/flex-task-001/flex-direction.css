@@ -1,3 +1,9 @@
+h2{
+    text-align: center;
+}
+/*=====================
+flex-direction
+/*=====================*/
 .room {
     display: flex;
     height: 150px;
@@ -6,15 +12,13 @@
     flex-direction: row-reverse;*/
     flex-direction: column-reverse;
   }
-
 /*=====================
-justify-content
+justify-content: space-between | space-around | space-evenly
 /*=====================*/
 .room-1 {
   flex-direction: row;
   justify-content: space-evenly;/*отступы между элементами и краями контейнера были одинаковыми.*/
 }
-
 .room-2 {
   flex-direction: row;
   justify-content: space-around;/*равномерное распределение с половинными отступами по краям.*/
