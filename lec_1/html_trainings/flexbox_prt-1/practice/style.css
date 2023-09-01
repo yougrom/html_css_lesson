@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
   }
+
 /*Section Menu*/
 .menu {
     display: flex;
@@ -13,15 +14,35 @@
 .logo {
     order: -1;
   }
+
 /*Section Social*/
 .post {
     display: flex;
   }
-  
-  .post aside {
+.post aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     order: -1;
     margin-right: 20px;
   }
+
+  /*Section Social*/
+  .sort-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-sort:checked ~ .sort-list {
+    flex-direction: column-reverse;
+  }
+
+    /*Section Cards*/
+    .columns {
+        display:flex;
+        flex-wrap:wrap;
+      }
+      
+      .columns section {
+        float: left;
+        width: 140px;
+      }
