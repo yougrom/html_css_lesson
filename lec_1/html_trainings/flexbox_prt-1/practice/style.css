@@ -1,0 +1,27 @@
+/*Section Produkt*/
+.pictures {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+/*Section Menu*/
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.logo {
+    order: -1;
+  }
+/*Section Social*/
+.post {
+    display: flex;
+  }
+  
+  .post aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: -1;
+    margin-right: 20px;
+  }
