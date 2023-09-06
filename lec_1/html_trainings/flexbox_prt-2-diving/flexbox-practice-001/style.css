@@ -3,20 +3,59 @@
     align-items: stretch;
     justify-content: space-around;
   }
-  
-  .skate {
+.skate {
     margin: 10px;
     min-width: 50px;
     min-height: 50px;
   }
-  
-  .skate-2 {
+.skate-2 {
      margin-top: auto
   }
-  
-  .skate-3 {
+.skate-3 {
     align-self: flex-end;
     margin-bottom: auto;
-  
   }
+  
+/* =================================
+ The test: cubism 
+ ================================= */
+  .palette div {
+    min-width: 35px;
+    min-height: 35px;
+  }
+  .palette {
+    display:flex;
+  }
+  .color-olive, 
+  .color-aqua {
+    height:150px;
+    margin-top:auto;
+    margin-bottom:auto;
+  }
+  .color-olive {
+    margin-left:30px;
+  }
+  .color-aqua {
+    margin-right:30px;
+    width:50px;
+  }
+  
+  .color-yellow, 
+  .color-fuchsia{  
+    height:100px;
+  }
+  .color-yellow{  
+    margin-top:auto;
+    margin-bottom:5px;
+  }
+  .color-fuchsia{  
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-top:5px;
+  }
+  .color-yellow, 
+  .color-aqua{  
+    margin-left:10px;
+  }
+  
   
