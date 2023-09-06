@@ -1,3 +1,15 @@
+/* =================================
+ Basics
+ ================================= */
+h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* =================================
+ Flexbox
+ ================================= */
 .spot {
     display: flex;
     align-items: stretch;
@@ -57,5 +69,16 @@
   .color-aqua{  
     margin-left:10px;
   }
-  
+  /* ============================
+  Flex Grow
+ ================================= */
+  .spot {
+    display: flex;
+  }
+  .racoon-green {
+    flex-grow: 1;
+  }
+  .racoon-orange {
+    flex-grow: 1;
+  }
   
