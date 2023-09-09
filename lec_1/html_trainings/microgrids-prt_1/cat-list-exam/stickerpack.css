@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 10px;
+    line-height: 0;
+  }
+  
+  .stickers-list {
+    background-color: #E3E2ED;
+    border: 1px solid #BEBAE0;
+    border-radius: 4px;
+    list-style: none;
+  }
+  
+  .sticker {
+    background-color: #4D53BC;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
