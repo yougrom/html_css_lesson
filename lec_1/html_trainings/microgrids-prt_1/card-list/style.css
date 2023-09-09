@@ -1,0 +1,26 @@
+body {
+    margin: 15px;
+  }
+  
+  .cards-list {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin: 0;
+    padding: 20px;
+   }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .wide {
+   grid-column: span 2;
+  }
+  
+  .huge {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
