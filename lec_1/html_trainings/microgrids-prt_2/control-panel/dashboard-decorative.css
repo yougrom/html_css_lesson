@@ -1,0 +1,126 @@
+.dashboard {
+    width: 520px;
+    padding: 20px;
+    display: flex;
+    font-family: Tahoma, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 68, 175);
+}
+
+.tabs-list {
+    list-style: none;
+    flex-shrink: 0;
+}
+
+.tab {
+    width: 160px;
+}
+
+.tab-link {
+    display: block;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(95, 110, 235);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.tab-link::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 15px;
+    background-repeat: no-repeat;
+}
+
+.charts::before {
+    background-image: url("img/chart.svg");
+}
+
+.clients::before {
+    background-image: url("img/client.svg");
+}
+
+.documents::before {
+    background-image: url("img/document.svg");
+}
+
+.messages::before {
+    background-image: url("img/message.svg");
+}
+
+.projects::before {
+    background-image: url("img/project.svg");
+}
+
+.settings::before {
+    background-image: url("img/settings.svg");
+}
+
+.trash::before {
+    background-image: url("img/trash.svg");
+}
+
+.active .tab-link {
+    background-color: rgb(238, 240, 252);
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 700;
+    color: rgb(56, 68, 174);
+}
+
+.content {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(238, 240, 252);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.author {
+    width: 135px;
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(95, 110, 235);
+}
+
+.author-avatar {
+    margin-right: 10px;
+}
+
+.message {
+    text-align: center;
+}
+
+.reply-link {
+    padding: 5px 10px;
+    background-color: rgb(96, 109, 235);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0px, 0px, 0px, 0px);
+    overflow: hidden;
+}
