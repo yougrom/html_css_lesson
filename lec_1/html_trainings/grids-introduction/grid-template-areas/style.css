@@ -24,10 +24,22 @@ grid-template-areas
 */
 
 /*====================
-grid-template-columns
+grid-template-columns & grid-template-rows
 ====================*/
 .land {
     display: grid;
-    grid-template-columns: 100px 300px 100px;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px auto 100px;
+    column-gap: 50px;
+    row-gap: 25px;
   }
+  .element--water{
+    grid-column:1/4;
+    }
+  .element--grass{
+    grid-row:2/4;
+    }
+  .element--sand{
+    grid-column:2/4;
+    }
   
