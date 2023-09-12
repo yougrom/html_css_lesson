@@ -1,6 +1,6 @@
 /*====================
 grid-template-areas
-====================*/
+====================
 .land {
     display: grid;
     grid-template-areas:
@@ -21,4 +21,13 @@ grid-template-areas
 .element--rocks{
     grid-area:r;
 }
-    
+*/
+
+/*====================
+grid-template-columns
+====================*/
+.land {
+    display: grid;
+    grid-template-columns: 100px 300px 100px;
+  }
+  
