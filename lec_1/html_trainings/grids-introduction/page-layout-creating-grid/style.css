@@ -1,11 +1,11 @@
-.index-grid {
+.inner-grid {
     display: grid;
     width: 550px;
     margin-left: auto;
     margin-right: auto;
     gap: 20px;
     grid-template-columns: 170px 170px 170px;
-    grid-template-rows: auto 200px auto 100px;
+    grid-template-rows: auto auto 100px;
   }
   
   .site-header {
@@ -13,25 +13,25 @@
     grid-column-end: 4;
   }
   
-  .promo {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  
-  .sidebar {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-  
-  .blog {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  
   .site-footer {
     grid-column-start: 1;
     grid-column-end: -1;
-    }
+  }
+  
+  .catalog-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 170px 170px 170px;
+    grid-template-rows: 50px;
+  }
+  
+  .sort {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  
+  .filter {
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
   
