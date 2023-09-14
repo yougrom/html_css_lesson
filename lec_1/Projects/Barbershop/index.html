@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="main-header">
         <nav class="main-navigation">
@@ -26,134 +31,150 @@
             </ul>
         </nav>
     </header>
-<main class="container">
-     <h1 class="visually-hidden">Barbershop Borodinski</h1>
-     <section class="features">
-        <h2 class="visually-hidden">Features</h2>
-        <ul class="features-list">
-            <li class="feature-item">
-                <h3>Fast</h3>
-                <p>We do our job quickly! Two hours will fly by unnoticed and you are the happy owner of a stylish haircut-minute.</p>
-            </li>
-            <li class="feature-item">
-                <h3>Cool</h3>
-                <p>Forget how you cut your hair before. We will make you a football or movie star. At least outwardly.</p>
-            </li>
-            <li class="feature-item">
-                <h3>Expensive</h3>
-                <p>Our masters - professionals in their field can not be cheap. Besides, doesn't the price give a certain status?</p>
-            </li>
-        </ul>
-     </section>
-     <section class="news">
-        <h2>News</h2>
-        <ul class="news-list">
-            <li class="news-item">
-                <p>We finally got the Jagermeister! Now you can skip a cup while cutting.</p>
-                <time datetime="2023-07-17">17 July</time>
-            </li>
-            <li class="news-item">
-                <p>There is a new addition to our team, Boris "Razor" Strigunets, who has joined our slender ranks. Hurry up to sign up!</p>
-                <time datetime="2023-07-17">17 July</time>
-            </li>
-        </ul>
-        <a class="button" href="news.html">All News</a>
-     </section>
-     <section class="gallery">
-        <h2>Gallery</h2>
-        <figure class="gallery-content">
-            <a href="#"><img src="img/Layer 21.jpg" width="286" height="164" alt="Img"></a>
-        </figure>
-        <button class="button gallery-button gallery-button-back" type="button">Back</button>
-        <button class="button gallery-button gallery-button-next" type="button">Next</button>
-     </section>
-     <section class="contacts">
-        <h2>Contacts Information</h2>
-        <p>
+    <main class="container">
+        <h1 class="visually-hidden">Barbershop Borodinski</h1>
+        <section class="features">
+            <h2 class="visually-hidden">Features</h2>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <h3>Fast</h3>
+                    <p>We do our job quickly! Two hours will fly by unnoticed and you are the happy owner of a stylish
+                        haircut-minute.</p>
+                </li>
+                <li class="feature-item">
+                    <h3>Cool</h3>
+                    <p>Forget how you cut your hair before. We will make you a football or movie star. At least
+                        outwardly.</p>
+                </li>
+                <li class="feature-item">
+                    <h3>Expensive</h3>
+                    <p>Our masters - professionals in their field can not be cheap. Besides, doesn't the price give a
+                        certain status?</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="index-columns">
+            <section class="news">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <p>We finally got the Jagermeister! Now you can skip a cup while cutting.</p>
+                        <time datetime="2023-07-17">17 July</time>
+                    </li>
+                    <li class="news-item">
+                        <p>There is a new addition to our team, Boris "Razor" Strigunets, who has joined our slender
+                            ranks. Hurry up to sign up!</p>
+                        <time datetime="2023-07-17">17 July</time>
+                    </li>
+                </ul>
+                <a class="button" href="news.html">All News</a>
+            </section>
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <figure class="gallery-content">
+                    <a href="#"><img src="img/Layer 21.jpg" width="286" height="164" alt="Img"></a>
+                </figure>
+                <button class="button gallery-button gallery-button-back" type="button">Back</button>
+                <button class="button gallery-button gallery-button-next" type="button">Next</button>
+            </section>
+        </div>
+        <div class="index-columns">
+            <section class="contacts">
+                <h2>Contacts Information</h2>
+                <p>
+                    Barbershop Borodinsky<br>
+                    Adress: Kyiv, st. Bolshaya Korasevskaya 19/8<br>
+                    Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a>
+                </p>
+                <p>
+                    Working time<br>
+                    Mo-Fr: 08:00-17:00<br>
+                    Su-Sa: Rest day
+                </p>
+                <a href="#" class="button">Google map</a>
+                <a href="contacts.html" class="button">Contact Form</a>
+            </section>
+            <section class="appointment">
+                <h2>Make an appointment</h2>
+                <p class="appointment-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+                    facere vel, ut recusandae eum labore sunt laborum deleniti voluptatem laudantium delectus voluptates
+                    minima.</p>
+                <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="appointment-item">
+                        <label for="appointment-date">Date</label>
+                        <input type="text" name="date" value="" id="appointment-date" placeholder="09.08.2023">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-time">Time</label>
+                        <input type="text" name="time" value="" id="appointment-time" placeholder="10:00">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-name">Name</label>
+                        <input type="text" name="name" value="" id="appointment-name" placeholder="Grom">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-phone">Phone</label>
+                        <input type="tel" name="phone" value="" id="appointment-phone" placeholder="0176 712-30-334">
+                    </p>
+                    <button class="button" type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <p class="footer-contacts">
             Barbershop Borodinsky<br>
             Adress: Kyiv, st. Bolshaya Korasevskaya 19/8<br>
-            Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a> 
+            <a href="#" class="button">Google map</a><br>
+            Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a>
         </p>
-        <p>
-            Working time<br>
-            Mo-Fr: 08:00-17:00<br>
-            Su-Sa: Rest day
+        <div class="footer-social">
+            <b>Let's have friendship</b>
+            <ul>
+                <li><a href="#" class="social-button">Fb</a></li>
+                <li><a href="#" class="social-button">Xing</a></li>
+                <li><a href="#" class="social-button">Ln</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Developed by:</b>
+            <a href="#" class="social-button">von Herr Gromov</a>
         </p>
-        <a href="#" class="button">Google map</a>
-        <a href="contacts.html" class="button">Contact Form</a>
-     </section>
-     <section class="appointment">
-        <h2>Make an appointment</h2>
-        <p class="appointment-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis facere vel, ut recusandae eum labore sunt laborum deleniti voluptatem laudantium delectus voluptates minima.</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="appointment-item">
-                    <label for="appointment-date">Date</label>
-                    <input type="text" name="date" value="" id="appointment-date" placeholder="09.08.2023">
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-time">Time</label>
-                    <input type="text" name="time" value="" id="appointment-time" placeholder="10:00">
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-name">Name</label>
-                    <input type="text" name="name" value="" id="appointment-name" placeholder="Grom">
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-phone">Phone</label>
-                    <input type="tel" name="phone" value="" id="appointment-phone" placeholder="0176 712-30-334">
-                </p>
-                <button class="button" type="submit">Send</button>
+    </footer>
+    <section class="modal modal-login">
+        <h2>My Kabinet</h2>
+        <p>Enter your Login & Pass </p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login">Login</label>
+                <input type="text" class="login-icon-user" id="user-login" name="login" placeholder="Login">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-pasword">Password</label>
+                <input type="password" class="password-icon-user" id="user-pasword" name="password"
+                    placeholder="password">
+            </p>
+            <p class="login-passord-info">
+                <label class="login-checkbox" for="">
+                    <input type="checkbox" class="visually-hidden" id="login-passord-info" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Remember Me!
+                </label>
+                <a href="#" class="restore">I foget the password!</a>
+            </p>
+            <button class="button" type="submit">Enter</button>
         </form>
-     </section>
-</main>
-<footer class="main-footer">
-    <p class="footer-contacts">
-        Barbershop Borodinsky<br>
-        Adress: Kyiv, st. Bolshaya Korasevskaya 19/8<br>
-        <a href="#" class="button">Google map</a><br>
-        Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a> 
-    </p>
-    <div class="footer-social">
-        <b>Let's have friendship</b>
-        <ul>
-            <li><a href="#" class="social-button">Fb</a></li>
-            <li><a href="#" class="social-button">Xing</a></li>
-            <li><a href="#" class="social-button">Ln</a></li>
-        </ul>
-    </div>
-    <p class="footer-copyright">
-        <b>Developed by:</b>
-        <a href="#" class="social-button">von Herr Gromov</a>
-    </p>
-</footer>
-<section class="modal modal-login">
-    <h2>My Kabinet</h2>
-    <p>Enter your Login & Pass </p>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-            <label class="visually-hidden" for="user-login">Login</label>
-            <input type="text" class="login-icon-user" id="user-login" name="login" placeholder="Login">
-        </p>
-        <p>
-            <label class="visually-hidden" for="user-pasword">Password</label>
-            <input type="password" class="password-icon-user" id="user-pasword" name="password" placeholder="password">
-        </p>
-        <p class="login-passord-info">
-            <label for=""></label>
-            <input type="checkbox" class="visually-hidden" id="login-passord-info" name="remember">Remember Me!
-            <a href="#" class="restore">I foget the password!</a>
-        </p>
-        <button class="button" type="submit">Enter</button>
-    </form>
-    <button class="modal-close" type="button">Close</button>
-</section>
+        <button class="modal-close" type="button">Close</button>
+    </section>
 
-<section class="modal modal-map">
-    <h2 class="visually-hidden">How you can reach us - Berlin, Tegel </h2>
-    <p>
-        <img src="img/map.jpg" width="780" height="560" alt="Offis of the company - map">
-    </p>
-    <button class="modal-close" type="button">Close</button>
-</section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">How you can reach us - Berlin, Tegel </h2>
+        <p>
+            <img src="img/map.jpg" width="780" height="560" alt="Offis of the company - map">
+        </p>
+        <button class="modal-close" type="button">Close</button>
+    </section>
 </body>
+
 </html>

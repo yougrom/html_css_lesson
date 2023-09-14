@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="main-header">
         <nav class="main-navigation">
@@ -32,8 +34,25 @@
             <p>Long, expensive, meticulous.</p>
             <p>Mathematically verified design<br> for your website and mobile application.</p>
             <a class="button button__red" href="#">Learn more</a>
+            <ul class="slides-switches">
+                <li class="slide-radio">
+                    <button class="slide-btn">
+                        Первый слайд
+                    </button>
+                </li>
+                <li class="slide-radio">
+                    <button class="slide-btn">
+                        Второй слайд
+                    </button>
+                </li>
+                <li class="slide-radio">
+                    <button class="slide-btn">
+                        Третий слайд
+                    </button>
+                </li>
+            </ul>
         </section>
-         <section class="services">
+        <section class="services">
             <h2 class="visually-hidden">Our Services</h2>
             <ul class="services-list">
                 <li class="services-item">
@@ -55,8 +74,8 @@
                     <a href="#" class="button button__yellow">Оrder</a>
                 </li>
             </ul>
-         </section>
-         <section class="about about-left">
+        </section>
+        <section class="about about-left">
             <h2 class="visually-hidden">Abut us</h2>
             <p>We are a small but proud design studio from Berlin.</p>
             <p>We profess the principles of minimalism and purity. We put mathematically all thinks what we do!</p>
@@ -66,14 +85,14 @@
                 <li class="about-items">Mobile Apps for Android and IOS</li>
                 <li class="about-items">Slideshow and video for corporate presentations</li>
             </ul>
-         </section>
-         <section class="about about-right">
+        </section>
+        <section class="about about-right">
             <img src="img/nerds-illustration.jpg" alt="Nerds Illustation">
             <h3>Since 2023 We love precision in everything:</h3>
             <ul class="about__numbers">
                 <li class="about__numbers_items">
-                     <p class="about__numbers_items-1">146<sup>%</sup></p>
-                     <p class="about-right__text">Dedication level</p>
+                    <p class="about__numbers_items-1">146<sup>%</sup></p>
+                    <p class="about-right__text">Dedication level</p>
                 </li>
                 <li class="about__numbers_items">
                     <p class="about__numbers_items-1">100<sup>%</sup></p>
@@ -84,48 +103,40 @@
                     <p class="about-right__text">Minimum prepayment</p>
                 </li>
             </ul>
-         </section>
-         <section class="gallery">
-            <figure class="gallery__content">
-                <a href="#">
-                    <img src="img/logo-1.png" width="200" height="70" alt="html Academy">
-                </a>
-                <a href="#">
-                    <img src="img/logo-2.png" width="200" height="70" alt="Borodinsky">
-                </a>
-                <a href="#">
-                    <img src="img/logo-3.png" width="200" height="70" alt="Pink">
-                </a>
-                <a href="#">
-                    <img src="img/logo-4.png" width="200" height="70" alt="Mishka">
-                </a>
-            </figure>
-         </section>
-         <section class="contact-map">
+        </section>
+        <section class="partners">
+            <ul class="partners-list">
+                <li><a href="#"><img src="img/logo-1.png" width="200" height="70" alt="html Academy"></a></li>
+                <li><a href="#"><img src="img/logo-2.png" width="200" height="70" alt="Borodinsky"></a></li>
+                <li><a href="#"><img src="img/logo-3.png" width="200" height="70" alt="Pink"></a></li>
+                <li><a href="#"><img src="img/logo-4.png" width="200" height="70" alt="Mishka"></a></li>
+            </ul>
+        </section>
+        <section class="contact-map">
             <img src="img/map.jpg" class="contact-map_background" alt="Büro in Bernauer str. 111 Tegel">
             <div class="contact-data">
                 <h2>NЁRDS DESIGN STUDIO</h2>
                 <p>
                     Kyiv, st. Bolshaya Korasevskaya 19/8<br>
-                    Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a> 
+                    Phone: <a href="tel:+498767832332">+49 (0)876-783-2332</a>
                 </p>
                 <a href="#" class="button button__red">Right to us</a>
             </div>
-         </section>
-         <footer class="main-footer">
+        </section>
+        <footer class="main-footer">
             <div class="footer-copyright">
                 <b>Let's be friends, it's profitable!</b>
-                <p>10% discount for friends from social networks.</p> 
+                <p>10% discount for friends from social networks.</p>
             </div>
             <div class="footer-social">
-                 <ul>
+                <ul>
                     <li><a href="" class="sosial-button">VK</a></li>
                     <li><a href="" class="sosial-button">FB</a></li>
                     <li><a href="" class="sosial-button">Instagram</a></li>
-                 </ul>
+                </ul>
             </div>
-         </footer>
-         <section class="modal modal-message">
+        </footer>
+        <section class="modal modal-message">
             <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="appointment-item">
                     <label class="visually-hidden" for="user-name">Name</label>
@@ -133,7 +144,8 @@
                 </p>
                 <p class="appointment-item">
                     <label class="visually-hidden" for="user-business">Business</label>
-                    <input class="business-user-fild" type="text" name="business" id="user-business" placeholder="Your Business">
+                    <input class="business-user-fild" type="text" name="business" id="user-business"
+                        placeholder="Your Business">
                 </p>
                 <p class="appointment-item">
                     <label class="visually-hidden" for="user-phone">Phone</label>
@@ -147,12 +159,16 @@
                 <textarea name="" id="textarea-message" cols="30" rows="5" placeholder="Tell us something"></textarea>
                 <p class="appointment-item">
                     <input class="visually-hidden checkbox-accept-icon" type="checkbox" name="" id="checkbox-accept">
-                    <label class="visually-hidden" for="checkbox-accept">We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. By clicking “Accept,“ you agree to our website's cookie use as described in our Privacy Policy.</label>
+                    <label class="visually-hidden" for="checkbox-accept">We use essential cookies to make our site work.
+                        With your consent, we may also use non-essential cookies to improve user experience and analyze
+                        website traffic. By clicking “Accept,“ you agree to our website's cookie use as described in our
+                        Privacy Policy.</label>
                 </p>
                 <button class="button" type="submit">Send</button>
             </form>
             <button class="modal-close" type="button">Close</button>
-         </section>
+        </section>
     </main>
 </body>
+
 </html>
