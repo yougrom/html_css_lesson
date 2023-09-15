@@ -1,21 +1,182 @@
-/*
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }*/
-  .output-area output {
-    padding: 5px 5px;
-    font-family: "Roboto", sans-serif;
-    vertical-align: middle;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-
+/*===============
+Add Global Text Parametrs
+==================*/
+:root {
+  --colour-primary: #fb565a;
+  --colour-primary-hover: #d7373b;
+  --colour-primary-active: #;
+  --colour-secondary: #;
+  --colour-primary-light: #;
+  --colour-primary-light-hover: #;
+  --colour-primary-light-active: #;
+  --colour-grey-darker: #;
+  --colour-grey-dark: #;
+  --colour-grey: #;
+  --colour-dark-body-base: #283136;
+  --colour-black: #000000;
+  --colour-white: #ffffff;
+  --colour-green: #00ca74;
+  --colour-green-hover: #00aa62; 
+  --colour-yellow: #efc84a;
+  --colour-yellow-hover: #e5a722;
+  --colour-grey-light: #eeeeee;
+  --colour-off-white: #;
+  --colour-negative: #;
+  --spacing-base: 0px;
+  --font-family: "Roboto", Arial, sans-serif;
+  --body-font-size:16px;
+  --font-size-base: 0px;
+  --line-height-base: 0px;
+  --border-radius: 5px;
+  --border-radius-button: 5px;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--colour-dark-body-base);
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=================
+Main Navigation
+==================*/
+.main-navigation {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--colour-black);
+  text-transform: uppercase;
+
+  background-color: var(--colour-grey-light);
+}
+
+.site-navigatin,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigatin a,
+.user-navigation a {
+  color: var(--colour-black);
+}
+
+.site-navigatin a:hover,
+.site-navigatin a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--colour-primary);
+}
+
+/* Simple CSS Underline Menu */
+/* https://codepad.co/snippet/simple-css-underline-menu */
+
+/*=================
+Hero Section
+==================*/
+.slider{
+  background-color: var(--colour-grey-light);
+}
+.slider__content h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--colour-white);
+  text-transform: uppercase;
+}
+
+.slider__button{
+  background-color:var(--colour-primary);
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 4px;
+  width: 10px;
+  height: 10px;
+
+  border: 5px solid var(--colour-white);
+  border-radius: 50%;
+  background-color: var(--colour-white);
+
+  cursor: pointer;
+  transition: background-color 0.35s;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: var(--colour-grey-light);
+}
+
+/*=================
+Services Section
+==================*/
+.services-item {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-red {
+  background-color: var(--colour-primary);
+}
+.button-red:hover,
+.button-red:focus,
+.button-red:active{
+  background-color: var(--colour-primary-hover);
+}
+
+.button-green {
+  background-color: var(--colour-green); 
+}
+.button-green:hover,
+.button-green:focus,
+.button-green:active{
+  background-color: var(--colour-green-hover);
+}
+
+.button-yellow {
+  background-color: var(--colour-yellow);
+}
+.button-yellow:hover,
+.button-yellow:focus,
+.button-yellow:active{
+  background-color: var(--colour-yellow-hover);
+}
+
+/*Razobratsya*/
+.services{
+  border-bottom: 1px solid var(--colour-grey-light);
+}
+

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,29 +30,44 @@
         </nav>
     </header>
     <main class="container">
-        <section>
-            <!--Add img background-->
+        <section class="slider">
             <h1 class="visually-hidden">Web Studio Nerds</h1>
-            <p>Long, expensive, meticulous.</p>
-            <p>Mathematically verified design<br> for your website and mobile application.</p>
-            <a class="button button__red" href="#">Learn more</a>
-            <ul class="slides-switches">
-                <li class="slide-radio">
-                    <button class="slide-btn">
-                        Первый слайд
-                    </button>
-                </li>
-                <li class="slide-radio">
-                    <button class="slide-btn">
-                        Второй слайд
-                    </button>
-                </li>
-                <li class="slide-radio">
-                    <button class="slide-btn">
-                        Третий слайд
-                    </button>
-                </li>
-            </ul>
+            <div class="slider__list">
+                <div class="slider__item">
+                    <div class="slider__content">
+                        <h2 class="slider__titel">Long, expensive, meticulous.</h2>
+                        <p class="slider__subtitle">Mathematically verified design for your website and mobile application.</p>
+                        <a class="button slider__button" href="#">Learn more</a>
+                    </div>
+                    <img src="img/slide1.png" alt="Mobile Mockups">
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__content">
+                        <h2 class="slider__titel">We love maths like no one else.</h2>
+                        <p class="slider__subtitle">No creativity, just mathematical formulas to calculate the perfect proportions.</p>
+                        <a class="button slider__button" href="#">Learn more</a>
+                    </div>
+                    <img src="img/slide2.png" alt="Desktop Mockups">
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__content">
+                        <h2 class="slider__titel">Night only, hardcore</h2>
+                        <p class="slider__subtitle">Working during the day like everyone else? We're against it. Close to midnight, the work just starts.</p>
+                        <a class="button slider__button" href="#">Learn more</a>
+                    </div>
+                    <img src="img/slide3.png" alt="Tablet Mockups">
+                </div>
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+            </div>
         </section>
         <section class="services">
             <h2 class="visually-hidden">Our Services</h2>
@@ -59,19 +76,19 @@
                     <img src="img/illustration-1.jpg" alt="Web Sites">
                     <h3>Web Sites</h3>
                     <p>The world will never be the same after seeing your site!</p>
-                    <a href="#" class="button button__red">Оrder</a>
+                    <a href="#" class="button service__button button-red">Оrder</a>
                 </li>
                 <li class="services-item">
                     <img src="img/illustration-2.jpg" alt="Apps">
-                    <h3>Web Sites</h3>
+                    <h3>Application</h3>
                     <p>Conquer the top 10 apps in the App Store and Google Play</p>
-                    <a href="#" class="button button__green">Оrder</a>
+                    <a href="#" class="button service__button button-green">Оrder</a>
                 </li>
                 <li class="services-item">
                     <img src="img/illustration-3.jpg" alt="Presentation">
-                    <h3>Web Sites</h3>
+                    <h3>Presentation</h3>
                     <p>You don't even know how amazing you are!</p>
-                    <a href="#" class="button button__yellow">Оrder</a>
+                    <a href="#" class="button service__button button-yellow">Оrder</a>
                 </li>
             </ul>
         </section>
