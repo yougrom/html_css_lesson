@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds Catalog</title>
-    <link rel="stylesheet" href="start.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="main-header">
@@ -25,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="inner-page">
         <section>
             <h1 class="page-title">Store of ready-made templates</h1>
         </section>
@@ -40,7 +42,6 @@
                          <div class="half-width output-area">
                             <output name="daysoutput"></output>
                         </div>
-
                     </div>
                 </fieldset>
                 <fieldset>
@@ -55,7 +56,7 @@
                             <label for="filter-fixed">Fixed</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grid" id="filter-rubber">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grid" id="filter-rubber" disabled>
                             <label for="filter-rubber">Rubber</label>
                         </li>
                     </ul>
