@@ -1,0 +1,74 @@
+/*=======================
+Flow -- 1
+==========================*/
+.container {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.block {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #cc0000;
+  background-color: rgba(255, 234, 171, 0.5);
+  border: 2px dashed #cccccc;
+}
+
+.column1 {
+  float: left;
+  width: 120px;
+  min-height: 50px;
+}
+
+.column2 {
+  float: right;
+  width: 120px;
+  min-height: 50px;
+}
+
+.column3 {
+  clear: both;
+  width: 150px;
+  min-height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*=======================
+Flow -- 2
+==========================*/
+.container2 {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.container2 .block {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #cc0000;
+  background-color: rgba(255, 234, 171, 0.5);
+  border: 2px dashed #cccccc;
+}
+
+.container2 .column1 {
+  float: left;
+  width: 65px;
+  min-height: 50px;
+  margin-right: 5px;
+}
+
+.container2 .column2 {
+  float: left;
+  width: 80px;
+  min-height: 50px;
+}
+
+.container2 .column3 {
+  float: right;
+  width: 65px;
+  min-height: 50px;
+}
+
+.container2 .footer {
+  clear:both;
+}
