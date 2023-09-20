@@ -1,6 +1,6 @@
-/*===============
+/*==============================
 Add Global Text Parametrs
-==================*/
+===============================*/
 body {
     margin: 0;
     padding: 0;
@@ -375,3 +375,8 @@ Basic styling of the product card of the ''Barber Shop'' project
 .product-info ul {
     list-style: none;
 }
+
+/*==============================
+Catalog Item Page
+===============================*/
+ 
