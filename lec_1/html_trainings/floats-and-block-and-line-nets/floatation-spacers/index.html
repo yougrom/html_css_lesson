@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Борьба с выпаданием флоатов: распорки</title>
+    <title>Борьба с выпаданием флоатов: псевдораспорки</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="style.css">
@@ -9,7 +9,8 @@
   <body>
     <div class="container">
       <h1>Выпадание из родителя</h1>
-      <div class="columns-container">
+      <!-- ↓ Класс добавьте этому блоку -->
+      <div class="columns-container clearfix-visible">
         <div class="column column1">
           .column1<br>
           Первая колонка
@@ -18,8 +19,6 @@
           .column2
           Вторая колонка
         </div>
-        <div class="clearfix"></div>
-        <!-- Распорку добавляйте сюда -->
       </div>
     </div>
   </body>
