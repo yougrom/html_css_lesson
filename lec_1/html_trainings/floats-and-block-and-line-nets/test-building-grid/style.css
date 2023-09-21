@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 450px;
+  height: 335px;
+
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper, .footer-wrapper {
+    background-color: #34495e;
+}
+
+.main-header, .promo1, .promo2 {
+    background-color: #c0392b;
+}
+
+.menu-wrapper, .block-left, .block-main, .block-right {
+    background-color:#3498db;
+}
+
+/* ====================
+Header
+==================== */
+.wrapper-header {
+    padding: 10px 0;
+}
+.main-header, .footer, .menu {
+    width: 340px;
+    margin: 0 auto;
+}
+.wrapper-promo, .blocks {
+    margin: 0 auto;
+    width: 350px;
+}
+.main-header, .menu, .footer {
+    min-height: 25px;
+    padding: 5px;
+}
+
+/*Promo*/
+.wrapper-promo {
+    padding: 10px 0;
+}
+
+.promo {
+    min-height: 50px;
+    padding: 5px;
+}
+
+.promo1 {
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+}
+
+.promo2 {
+    float: right;
+    width: 160px;
+}
+
+/* ====================
+Main
+==================== */
+.blocks {
+    padding: 10px 0;
+}
+
+.block {
+    padding: 5px;
+    min-height: 100px;
+}
+
+.block-left {
+    float: left;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.block-main {
+    float: left;
+    width: 180px;
+}
+
+.block-right {
+    float: right;
+    width: 60px;
+}
+/* ====================
+Footer
+==================== */
