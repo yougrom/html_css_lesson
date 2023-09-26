@@ -58,7 +58,7 @@ body {
   }
   
   .paginator .disabled {
-    opacity: 30%;
+    opacity: 0.3;
   }
   
   .paginator a:hover {
