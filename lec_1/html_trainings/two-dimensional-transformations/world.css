@@ -334,7 +334,7 @@ body {
   z-index: 11;
   width: 30px;
   height: 30px;
-  background: url("fireball.gif") 0 0 no-repeat;
+  background: url("gireball-practice/img/fireball.gif") 0 0 no-repeat;
   background-size: 30px;
 }
 
@@ -358,7 +358,7 @@ body {
   z-index: 8;
   width: 65px;
   height: 65px;
-  background: url("target-bw.png") 0 0 no-repeat;
+  background: url("gireball-practice/img/target-bw.png") 0 0 no-repeat;
 }
 
 .target-right {
