@@ -102,7 +102,7 @@ body {
   z-index: 10;
   width: 96px;
   height: 131px;
-  background: url("monster.png") 0 0 no-repeat;
+  background: url("skew/img/monster.png") 0 0 no-repeat;
   transform-origin: bottom center;
 }
 
