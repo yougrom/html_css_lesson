@@ -1,0 +1,11 @@
+.picture {
+    transition: transform 5.5s ease;
+    transform: scale(1);
+    transform: rotate(360deg);
+    transform-origin: top right;
+  }
+  
+  .picture.active {
+    transform: scale(0.5);
+  }
+  

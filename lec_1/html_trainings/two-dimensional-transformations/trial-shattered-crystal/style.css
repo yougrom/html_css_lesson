@@ -1,0 +1,43 @@
+body {
+    width: 550px;
+    height: 310px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .part-green {
+    transform:  rotate(90deg) 
+                translateX(0px)
+                translateY(-15px);
+  }
+  
+  .part-maroon {
+    transform:  rotate(180deg) 
+                translateY(125px);
+  }
+  
+  .part-orange {
+    transform:  translateY(160px)
+                translateX(105px)
+                rotate(-90deg)
+                scale(2);
+  }
+  
+  .part-red {
+    transform:  translateY(-100px)
+                translateX(175px)
+                skew(-45deg);;
+  }
+  
+  .part-yellow {
+      transform:  rotate(90deg) 
+                  translateX(0px)
+                  translateY(-40px);
+  }
+  
+  .part-blue {
+     transform: translateY(-80px)
+                translateX(-120px)
+                skew(-45deg);
+  }
+  

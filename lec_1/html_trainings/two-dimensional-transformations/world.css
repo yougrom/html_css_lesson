@@ -183,7 +183,7 @@ body {
 }
 
 .picture {
-  background: url("picture.jpg") 0 0 no-repeat;
+  background: url("transform-origin/img/picture.jpg") 0 0 no-repeat;
   box-shadow: 2px 2px 8px 1px #333333;
 }
 
@@ -547,7 +547,7 @@ body {
   left: 165px;
   width: 66px;
   height: 65px;
-  background: url("crystal/green.png") 0 0 no-repeat;
+  background: url("trial-shattered-crystal/img/green.png") 0 0 no-repeat;
 }
 
 .part-maroon {
@@ -555,7 +555,7 @@ body {
   left: 46px;
   width: 331px;
   height: 67px;
-  background: url("crystal/maroon.png") 0 0 no-repeat;
+  background: url("trial-shattered-crystal/img/maroon.png") 0 0 no-repeat;
 }
 
 .part-orange {
@@ -563,7 +563,7 @@ body {
   left: 65px;
   width: 83px;
   height: 118px;
-  background: url("crystal/orange.png") 0 0 no-repeat;
+  background: url("trial-shattered-crystal/img/orange.png") 0 0 no-repeat;
 }
 
 .part-red {
@@ -571,7 +571,7 @@ body {
   left: 38px;
   width: 132px;
   height: 66px;
-  background: url("crystal/red.png") 0 0 no-repeat;
+  background: url("trial-shattered-crystal/img/red.png") 0 0 no-repeat;
 }
 
 .part-yellow {
@@ -579,7 +579,7 @@ body {
   left: 272px;
   width: 66px;
   height: 66px;
-  background: url("crystal/yellow.png") 0 0 no-repeat;
+  background: url("trial-shattered-crystal/img/yellow.png") 0 0 no-repeat;
 }
 
 .part-blue {
@@ -587,7 +587,7 @@ body {
   left: 198px;
   width: 134px;
   height: 66px;
-  background: url("crystal/blue.png") 0 0 no-repeat;
+  background: url("trial-shattered-crystal/img/blue.png") 0 0 no-repeat;
 }
 
 .crystal > div {
