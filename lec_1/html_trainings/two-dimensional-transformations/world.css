@@ -41,7 +41,7 @@ body {
   z-index: 11;
   width: 89px;
   height: 62px;
-  background: url("wolf.png") 0 0 no-repeat;
+  background: url("rotate/img/wolf.png") 0 0 no-repeat;
   transform-origin: bottom center;
 }
 
@@ -76,7 +76,7 @@ body {
   z-index: 10;
   width: 81px;
   height: 125px;
-  background: url("werewolf.png") 0 0 no-repeat;
+  background: url("rotate/img/wolf.png") 0 0 no-repeat;
   transform-origin: 50% 75%;
 }
 
@@ -295,7 +295,7 @@ body {
   z-index: 8;
   width: 150px;
   height: 114px;
-  background: url("house.png") 0 0 no-repeat;
+  background: url("rotate/img/house.png") 0 0 no-repeat;
   transform-origin: bottom center;
 }
 
@@ -304,7 +304,7 @@ body {
   z-index: 12;
   width: 100px;
   height: 52px;
-  background: url("fence.png") 0 0 no-repeat;
+  background: url("rotate/img/fence.png") 0 0 no-repeat;
 }
 
 .fence-1 {
@@ -324,7 +324,7 @@ body {
   z-index: 12;
   width: 28px;
   height: 100px;
-  background: url("fence-old.png") 0 0 no-repeat;
+  background: url("rotate/img/fence-old.png") 0 0 no-repeat;
 }
 
 .fireball {
