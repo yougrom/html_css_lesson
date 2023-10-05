@@ -82,7 +82,7 @@
     box-sizing: border-box;
     width: 80px;
     height: 80px;
-    border: 20px solid #ffffff;
+    border: 20px solid #000000;
     border-radius: 50%;
     content: "";
     clip: rect(40px, 40px, auto, auto);
