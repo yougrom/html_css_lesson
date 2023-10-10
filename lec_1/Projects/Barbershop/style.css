@@ -376,7 +376,80 @@ Basic styling of the product card of the ''Barber Shop'' project
     list-style: none;
 }
 
+
 /*==============================
-Catalog Item Page
+Flexbox
 ===============================*/
- 
+
+/* Header + Logo */
+html, 
+body {
+    min-width: 1122px;
+    min-height: 1750px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+    margin-bottom: 75px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.main-header-logo {
+    order: 2;
+    width: 368px;
+    height: 153px;
+}
+
+.main-mavigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #000000;
+}
+
+.main-mavigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigatin {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navigatin {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user-navigation {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Main */
+
+.features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-item {
+    width: 300px;
+}
