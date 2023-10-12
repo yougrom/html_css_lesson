@@ -443,8 +443,13 @@ body {
 }
 
 /* Main */
+.features {
+    margin-bottom: 80px;
+}
 
 .features-list {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -452,4 +457,146 @@ body {
 
 .feature-item {
     width: 300px;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+.news {
+    width: 380px;
+}
+
+.gallery {
+    width: 300px;
+}
+
+.contacts {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
+}
+
+/* Footer */
+.main-footer .container {
+    display: flex;
+}
+
+.main-footer {
+    padding: 60px 0;
+    margin-top: 65px;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.footer-social {
+    width: 145px;
+}
+
+.footer-copyright {
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+}
+
+/*=================================================================
+Grid of Cart Page
+=================================================================*/
+.product-photos {
+    width: 460px;
+}
+
+.product-info {
+    width: 390px;
+}
+
+.catalog-columns {
+    display: flex;
+}
+
+/*=================================================================
+Grid of Catalog Page
+=================================================================*/
+.inner-page .main-header {
+    margin-bottom: 50px;
+    background-color: #000000;
+}
+
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.inner-page .main-header-logo {
+    order: 0;
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+}
+
+.inner-page .user-navigation {
+    margin-left: auto;
+}
+
+.page-titel {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.filters {
+    width: 180px;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+.pagination-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.inner-page .main-footer {
+    margin-top: 45px;
 }
