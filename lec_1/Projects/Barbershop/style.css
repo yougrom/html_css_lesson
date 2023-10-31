@@ -18,6 +18,29 @@ body {
     background-repeat: no-repeat;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 a {
     text-decoration: none;
 }
@@ -25,6 +48,9 @@ a {
 Buttons
 ==================*/
 .button{
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 30px;
     font: inherit;
     text-align: center;
     color:#ffffff;
@@ -39,6 +65,13 @@ Buttons
 .button:focus,
 .button:active{
     background-color:#663d15;
+}
+
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: black;
 }
 /*=================
 Main Navigation
@@ -58,6 +91,9 @@ Main Navigation
 
 .site-navigatin a,
 .user-navigation a {
+    display: block;
+    padding: 25px 20px;
+ 
     color: #ffffff;
 }
 
@@ -68,61 +104,160 @@ Main Navigation
     background-color: #242424;
 }
 
- .features-list{
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.login-link::before{
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 24px;
+
+    width: 16px;
+    height: 18px;
+
+    background-image:url("img/login.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+    opacity: 1;
+}
+
+ .features-list {
     list-style: none;
  }
 
-.feature-item{
+.feature-item {
     text-align: center;
 }
 
-.feature-item h3{
+.feature-item h3 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 60px ;
     font-size: 30px;
     line-height: 42px;
+}
+
+.feature-item h3::after {
+    content: "";
+
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+
+    background-color:white;
+
+    transform: rotate(45deg);
+}
+
+.feature-item p {
+    margin: 0 10px;
 }
 
 .index-columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url(img/pattern-light.jpg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-image:
+    url("img/Layer-00101.png"),
+    url("img/pattern-light.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
 }
 
-.index-columns h2{
+.index-columns h2 {
+    margin: 0;
+    margin-bottom: 25px;
+
     font-size: 30px;
     line-height: 42px;
 }
 
-.news-list{
+.news-list {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
     list-style: none;
 }
 
-.news-item time{
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item p{
+    margin: 0;
+}
+
+.news-item time {
     text-transform: none;
 }
 
-.gallery-content{
+.gallery-content img {
+    width: 286px;
+    height: 164;
+}
+
+.gallery-container {
+    position: relative;
+
+    height: 260px;
+}
+
+.gallery-button {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back {
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
+}
+
+.gallery-content {
+    margin: 0;
     background-color: #cccccc;
     border:7px solid #ffffff;
 }
   
-.appointment-item input{
+.appointment-item input {
     font: inherit;
 
     background-color:transparent;
     border: 2px solid #000000;
 }
 
-.appointment-item input:focus{
+.appointment-item input:focus {
     border-color: #663d15;
 }
 
 /*=================
 Footer
 ==================*/
-.main-footer{
+.main-footer {
     color:#ffffff;
 
     background-color: #212121;
@@ -147,11 +282,28 @@ Footer
 }
 
 .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+
     list-style: none;
 }
 
 .social-button {
     color: #ffffff;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+    fill: #000000;
 }
 
 .footer-copyright{
@@ -423,23 +575,20 @@ body {
 }
 
 .site-navigatin {
+    display: flex;
+    flex-wrap: wrap;
     width: 620px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
-.site-navigatin {
+.site-navigatin,
+.user-navigation {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .user-navigation {
-    width: 140px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    max-width: 140px;
 }
 
 /* Main */
@@ -457,6 +606,8 @@ body {
 
 .feature-item {
     width: 300px;
+
+    text-align: center;
 }
 
 .index-columns {
@@ -468,6 +619,7 @@ body {
 
 .news {
     width: 380px;
+
 }
 
 .gallery {
@@ -478,8 +630,55 @@ body {
     width: 380px;
 }
 
+.contacts p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
 .appointment {
     width: 300px;
+}
+
+.appointment-info {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.appointment-item label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px ;
+}
+
+.appointment-item input {
+    box-sizing: border-box;
+    width: 140px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+
+    font: inherit;
+}
+
+.appointment .button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+
 }
 
 /* Footer */
@@ -500,12 +699,36 @@ body {
 
 .footer-social {
     width: 145px;
+
+    text-align: center;
 }
+
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+
+    background-color: #000000;
+}
+
+
 
 .footer-copyright {
     width: 150px;
     margin: 0;
     margin-left: auto;
+}
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 0;
 }
 
 /*=================================================================
