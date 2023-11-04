@@ -190,19 +190,28 @@
     <script>
         var link = document.querySelector(".login-link");
         var popup = document.querySelector(".modal-login");
-
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-        });
-
-        
         var close = document.querySelector(".modal-close");
-
+        var login = popup.querySelector("[name=login]");
+        var password = popup.querySelector("[name=password]");
+        var form = popup.querySelector("form");
+        // open popup
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault(); // Cancel default action
+            popup.classList.add("modal-show");
+            login.focus(); // focus fild login in popup
+        });
+        // close popup
         close.addEventListener("click", function (evt) {
-            evt.preventDefault();
+            evt.preventDefault(); // Cancel default action
             popup.classList.remove("modal-show");
         });
+        // 
+        form.addEventListener("submit", function (evt) {
+            evt.preventDefault(); // Cancel default action
+            console.log("login.value");
+            console.log("password.value");
+        });
+        
     </script>
 
 </body>
