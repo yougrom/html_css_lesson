@@ -3,10 +3,10 @@ body {
     font-family: sans-serif;
 }
     
-.toggler__content { 
+.js .toggler__content { 
     display: none;
 }
 
-.toggler__content--on {
+.js .toggler__content--on {
     display: block;
 }
