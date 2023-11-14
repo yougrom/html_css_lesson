@@ -1,5 +1,27 @@
+/*Ищем в начале строки: [foo^="bar"]*/
 input[name^="cat"] {
     color: #3498db;
-    background: url("cat-paw.png") no-repeat 100% 50%;
+    background: url("img/cat-paw.png") no-repeat 100% 50%;
     border-color: #000000;
-  }
+}
+
+/*Ищем в конце строки: [foo$="bar"]*/
+input[value$="Кекс"] {
+    color: #e74c3c;
+} 
+
+/*Поиск подстроки везде: [foo*="bar"]*/
+input[value*="кекс"] {
+    color:green;
+}
+
+/*Поиск слов внутри строки: [foo~="bar"]]*/
+input[value~="KEKS-66893"] {
+    color: purple;
+}
+
+/*Поиск префиксов: [foo|="bar"]*/
+input[value|="02" ] {
+    color: #e74c3c;
+    border-color: #2ecc71;
+}

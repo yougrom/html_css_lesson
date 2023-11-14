@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
-    <title>Ищем в начале строки: [foo^="bar"]</title>
+    <title>Ищем в конце строки: [foo$="bar"]</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/html_academy/courses/html_css/lec_1/html_trainings/selectors-subtleties/course.css">
     <link rel="stylesheet" href="style.css">
@@ -18,14 +18,14 @@
           </div>
           <div class="half-width">
             <label>Котопаспорт</label>
-            <input type="text" name="cat-passport" value="KEKS-66893">
+            <input type="text" name="passport" value="KEKS-66893">
           </div>
 
           <div class="half-width">
             <label>Дата рождения</label>
-            <input type="datetime" name="cat-birthday" readonly value="18-07-2023">
+            <input type="datetime" name="cat-name" readonly value="11-04-1987">
           </div>
-          <div class="half-width">
+           <div class="half-width">
             <label>Посещения</label>
             <select name="type">
               <option value="Каждый час">Каждый час</option>
@@ -34,14 +34,18 @@
               <option value="1 раз в день">1 раз в день</option>
             </select>
           </div>
+          <label>Любимые сладости</label>
+            <input type="text" name="sweets" value="Люблю ванильные кексы и с изюмом">
           <div class="half-width">
             <label>Дата заявления</label>
-            <input type="datetime" name="date" value="10-10-2023">
+            <input type="datetime" name="date" value="02-06-2024">
           </div>
           <div class="half-width">
             <label>Подпись</label>
-            <input type="text" name="cat-sign" value="">
+            <input type="text" name="sign" value="Просто Кекс">
           </div>
+          <label>Слоган</label>
+          <input type="text" name="slogan" value="Если ты Кекс - ешь кекс">
         </fieldset>
         <div class="buttons">
           <input type="submit" value="Оформить">
@@ -51,3 +55,4 @@
     <footer class="page-footer"></footer>
   </body>
 </html>
+
