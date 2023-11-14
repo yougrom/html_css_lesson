@@ -1,0 +1,11 @@
+.cat-in-box::before {
+    display: block;
+}
+
+.cat-in-box[title^="Друг"]::before {
+    display: none;
+}
+
+.cat-in-box[title="Кекс"]::before {
+    display: none;
+}
