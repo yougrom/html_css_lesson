@@ -17,3 +17,21 @@ input[type="datetime"]:read-only {
 input[type="text"]:read-write {
     color: #3498db;
     }
+
+/*pseudo-class :required*/
+input[type="text"]:required {
+    border: 1px solid green;
+    }
+
+input[type="text"]:required {
+    background: url("img/required.png") no-repeat 100% 50%;
+    }
+
+/*pseudo-class :optional*/
+input[type="text"]:optional {
+    border: 1px solid #3498db;
+  }
+  
+  input[type="text"]:optional {
+    background: url('img/optional.png') no-repeat 100% 50%;
+  }
