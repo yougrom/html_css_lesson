@@ -1,0 +1,10 @@
+input[type="text"]:disabled {
+    opacity: 0.5;
+    background-color: #bdc3c7;
+    }
+    
+  input[type="text"]:enabled {
+    border: 1px solid red;
+    }
+  
+  
