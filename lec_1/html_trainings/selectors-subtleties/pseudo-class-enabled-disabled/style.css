@@ -30,14 +30,26 @@ input[type="text"]:required {
 /*pseudo-class :optional*/
 input[type="text"]:optional {
     border: 1px solid #3498db;
-  }
+    }
   
-  input[type="text"]:optional {
+input[type="text"]:optional {
     background: url('img/optional.png') no-repeat 100% 50%;
-  }
+    }
 
-  /*pseudo-class :checked*/
-  input:checked + label {
+/*pseudo-class :checked*/
+input:checked + label {
     color: #1abc9c;
-  }
+    }
+    
+.half-width input:not(:checked) {
+    margin-right: 10px;
+    }
   
+/*pseudo-class  :in-range & :out-of-range*/
+.half-width input:in-range {
+    border-color: #2ecc71;
+    }
+
+.half-width input:out-of-range {
+    border-color: #e74c3c;
+    }

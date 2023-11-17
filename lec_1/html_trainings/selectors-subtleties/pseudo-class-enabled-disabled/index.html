@@ -17,6 +17,16 @@
           <input type="text" name="name" value="Кексик" disabled required>
           <label>Номер котопаспорта</label>
           <input type="text" name="passport" pattern="[0-9]{3}-[0-9]{5}" placeholder="Формат номера XXX-XXXXX" value="ILV-66893">
+
+          <div class="half-width">
+            <label>Обедов в день</label>
+            <input type="number" min="1" max="3" value="4">
+          </div>
+          <div class="half-width">
+            <label>Количество блюд</label>
+            <input type="number" min="1" max="5" value="2">
+          </div>
+
           <div class="half-width">
             <label>Дата рождения</label>
             <input type="datetime" name="birthday" readonly value="11-04-1987">
@@ -30,6 +40,7 @@
               <option value="1 раз в день">1 раз в день</option>
             </select>
           </div>
+          
           <div class="half-width">
             <label>Выберите мясо</label>
             <input type="radio" value="1" id="rb-1" name="type"><label for="rb-1">Курица</label><br/>
@@ -37,6 +48,7 @@
             <input type="radio" value="3" id="rb-3" name="type"><label for="rb-3">Говядина</label><br/>
             <input type="radio" value="4" id="rb-4" name="type" checked><label for="rb-4">Индейка</label>
           </div>
+          
           <div class="half-width">
             <label>Дополнения</label>
             <input type="checkbox" value="1" id="chb-1" name="add[]"><label for="chb-1">Ложка сметаны</label><br/>
