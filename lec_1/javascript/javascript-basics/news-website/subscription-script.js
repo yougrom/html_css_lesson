@@ -13,10 +13,10 @@ themeButton.onclick = function() {
 //Меняем текстовое содержимое элемента при подписке
 let message = document.querySelector('.subscription-message');
 let form = document.querySelector('.subscription');
-// Объявите переменную здесь
+let email = document.querySelector('.subscription-email');
 
 form.onsubmit = function(evt) {
   evt.preventDefault();
   // Измените значение textContent на следующей строке
-  message.textContent = 'Форма отправлена!';
+  message.textContent = 'Адрес ' + email.value + ' добавлен в список получателей рассылки.';
 };
