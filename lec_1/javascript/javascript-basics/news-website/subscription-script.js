@@ -5,6 +5,18 @@ themeButton.onclick = function() {
   page.classList.toggle('light-theme');
   page.classList.toggle('dark-theme');
 };
-//onclick - мы указываем JavaScript, что делать, когда по этой кнопке кликнут.
-//А та часть инструкции, которая идёт после onclick, называется обработчиком событий.
+// onclick - мы указываем JavaScript, что делать, когда по этой кнопке кликнут.
+// А та часть инструкции, которая идёт после onclick, называется обработчиком событий.
 // Инструкции, которые выполняются после клика по кнопке, располагаются внутри фигурных скобок:
+
+
+//Меняем текстовое содержимое элемента при подписке
+let message = document.querySelector('.subscription-message');
+let form = document.querySelector('.subscription');
+// Объявите переменную здесь
+
+form.onsubmit = function(evt) {
+  evt.preventDefault();
+  // Измените значение textContent на следующей строке
+  message.textContent = 'Форма отправлена!';
+};
