@@ -16,6 +16,7 @@ let form = document.querySelector('.subscription');
 let email = document.querySelector('.subscription-email');
 
 form.onsubmit = function(evt) {
+    // Инструкция ниже отменяет отправку данных
   evt.preventDefault();
   // Измените значение textContent на следующей строке
   message.textContent = 'Адрес ' + email.value + ' добавлен в список получателей рассылки.';
