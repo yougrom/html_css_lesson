@@ -22,7 +22,7 @@ body {
     color: var(--base-color-2);
 
     background-color: var(--base-color-3);
-    background-image: url(/html_academy/courses/html_css/lec_1/careerfoundry/portfolio/img/noise.png);
+    background-image: url("noise.png");
     background-size: auto;
     background-repeat: repeat;
 }
@@ -54,6 +54,17 @@ a {
     text-decoration: none;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Header */
 .main-navigation a {
     font-size: 18px;
     line-height: 20px;
@@ -82,6 +93,27 @@ a {
     padding: 0;
 }
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navigatin {
+    display: flex;
+}
+
+.site-navigatin a {
+    display: block;
+    padding: 20px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1, h2, h3, h4, h6, h6 {
     font-weight: 300;
     text-transform: uppercase;
@@ -104,7 +136,7 @@ h3 {
 
 main:after {
     content: '';
-    background-image: url(/html_academy/courses/html_css/lec_1/careerfoundry/portfolio/img/ellipse.svg);
+    background-image: url("ellipse.svg");
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -170,3 +202,23 @@ Contact Page
     color: var(--base-color-1);
     border: 1px solid var(--base-color-1);
 }
+
+.appointment-item input, .appointment-item textarea {
+    padding: 15px;
+
+    color: var(--base-color-2);
+    background-color: transparent;
+
+    border-radius: 50px;
+    border: 1px solid var(--base-color-2);
+}
+
+.appointment-item input:hover, .appointment-item textarea:hover {
+    color: var(--base-color-1);
+    border: 1px solid var(--base-color-1);
+}
+
+/* */
+input::placeholder {
+    color:var(--base-color-2);
+} 

@@ -44,9 +44,8 @@ input[type="radio"].visually-hidden {
 a {
     text-decoration: none;
 }
-/*=================
-Buttons
-==================*/
+
+/* Buttons */
 .button{
     display: inline-block;
     margin-right: 16px;
@@ -73,6 +72,7 @@ Buttons
     opacity: 0.5;
     background-color: black;
 }
+
 /*=================
 Main Navigation
 ==================*/
