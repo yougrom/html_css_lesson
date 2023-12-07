@@ -7,7 +7,7 @@ Add Global Text Parametrs
     --base-color-3: #1b1b1b;
     --color-white: #fff;
     --color-black: #000;
-    --color-grey: #ccc;
+    --color-grey: #cccccc75;
     --font-base: 'Inter', sans-serif;
 }
 
@@ -105,13 +105,33 @@ a {
 
 .site-navigatin a {
     display: block;
-    padding: 20px;
+    padding: 60px 20px;
+}
+
+.site-navigatin li:last-child a {
+    padding-right: 0px;
 }
 
 /* Main Content */
 .main-content {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
+}
+
+.main-content img {
+    width: 40%;
+    box-shadow: 10px 10px 50px #5c2c19c7;
+    border-radius: 50%;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.main-content-wrapper {
+    padding: 100px 0;
 }
 
 h1, h2, h3, h4, h6, h6 {
@@ -125,8 +145,8 @@ h1 {
 }
 
 h2 {
-    font-size: 68px;
-    line-height: 96px;
+    font-size: 44px;
+    line-height: 52px;
 }
 
 h3 {
@@ -147,6 +167,29 @@ main:after {
     z-index: -1;
 }
 
+.main-content h1,
+.main-content h2 {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.main-content p,
+.about p {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.main-content p span {
+    color: var(--base-color-3);
+    font-weight: 400;
+    background-color: var(--base-color-1);
+}
+
+/* Footer */
+.main-footer {
+    padding: 50px 0;
+}
+
 .main-footer svg {
     fill: var(--base-color-2);
 }
@@ -159,17 +202,135 @@ main:after {
     list-style: none;
 }  
 
+.footer-items p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-items ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-items ul li{
+    padding-right: 25px;
+}
+
+.footer-items ul li:last-child{
+    padding-right: 0px;
+}
+
+/*==============================
+About Page
+===============================*/
+.about h1,
+.about p  {
+    text-align: center;
+}
+
+.about h1{
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.about p {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.about-table {
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--base-color-2);
+}
+  
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid var(--base-color-2);
+}
+  
+th {
+    padding: 10px;
+    padding-right: 50px;
+
+    text-align: left;
+
+    border: 1px solid var(--base-color-2);
+}
+
+caption {
+    margin-top: 5px;
+    color: var(--base-color-1);
+    caption-side:bottom;
+}
+
 /*==============================
 Contact Page
 ===============================*/
+.contacts {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contacts div:nth-child(1) {
+    width: 40%;
+}
+
+.contacts div:nth-child(2) {
+    width: 40%;
+}
+
+.contacts div:nth-child(2) h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.contacts h1, 
+.contacts h2{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.contacts h1{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.contacts h2{
+    font-size: 80px;
+    line-height: 96px;
+}
+
+/* Contact Form */
 .contacts-list a {
     color: var(--base-color-2);
+}
+
+.contacts-list li {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.contacts-list li::marker {
+    color: var(--base-color-1);
+}
+
+.contacts-list li:last-child {
+    margin-bottom: 0px;
 }
 
 .contacts-list {
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .contacts-list a:hover,
@@ -179,7 +340,11 @@ Contact Page
 }
 
 .contacts .button {
-    margin-top: 50px;
+    margin-top: 25px;
+}
+.contacts div:last-child .button {
+    float: right;
+    margin-top: 25px;
 }
 
 .button {
@@ -203,22 +368,52 @@ Contact Page
     border: 1px solid var(--base-color-1);
 }
 
-.appointment-item input, .appointment-item textarea {
-    padding: 15px;
+.appointment-item {
+    position: relative;
+    margin: 0;
+}
+
+.appointment-item label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.appointment-item input, 
+.appointment-item textarea {
+    width: 100%;
+    padding: 15px 15px 15px 100px;
 
     color: var(--base-color-2);
     background-color: transparent;
 
-    border-radius: 50px;
-    border: 1px solid var(--base-color-2);
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
 }
 
-.appointment-item input:hover, .appointment-item textarea:hover {
+.appointment-item input:hover, 
+.appointment-item textarea:hover {
     color: var(--base-color-1);
-    border: 1px solid var(--base-color-1);
+    border: none;
+    border-bottom: 1px solid var(--base-color-1);
 }
 
-/* */
+.appointment-item input:focus-visible, 
+.appointment-item textarea:focus-visible {
+    color: var(--base-color-1);
+    border-bottom: 1px solid var(--base-color-1);
+}
+
 input::placeholder {
-    color:var(--base-color-2);
+    color:var(--color-grey);
+    font-weight: 300;
 } 
+
+*:focus-visible {
+    outline: none;
+    box-shadow: 1px 1px 5px var(--base-color-1);
+}
+
+.contacts textarea {
+    height: 150px;
+}
