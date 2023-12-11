@@ -116,12 +116,10 @@ a {
     padding-right: 0px;
 }
 
-/* Main Content */
+/* Main Content Home Page */
 .main-content {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column-reverse;
 }
 
 .main-content img {
@@ -138,24 +136,24 @@ a {
     padding: 100px 0;
 }
 
+/* main style */
 h1, h2, h3, h4, h6, h6 {
     font-weight: 300;
     text-transform: uppercase;
 }
 
+/* mobile font */
 h1 {
-    font-size: 80px;
-    line-height: 112px;
+    font-size: 38px;
+    line-height: 57px;
 }
-
 h2 {
-    font-size: 44px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 45px;
 }
-
 h3 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 main:after {
@@ -189,6 +187,49 @@ main:after {
     background-color: var(--base-color-1);
 }
 
+.text-content {
+    margin-bottom: 35px;
+}
+
+/*main tablet*/
+@media all and (min-width: 768px) { 
+    h1 {
+        font-size: 46px;
+        line-height: 69px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    /* Main Content Home Page */
+    .main-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-content {
+        margin-bottom: 0px;
+    }
+}
+/*main desktop*/
+@media all and (min-width: 981px) { 
+    h1 {
+        font-size: 80px;
+        line-height: 112px;
+    }
+    h2 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
 /*==============================
  Footer 
  ==============================*/
@@ -211,12 +252,12 @@ main:after {
 .footer-items p {
     margin: 0;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-items ul {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
     padding: 0;
 }
@@ -228,13 +269,22 @@ main:after {
 .footer-items ul li:last-child{
     padding-right: 0px;
 }
+/*footer tablet*/
+@media all and (min-width: 768px) { 
+    .footer-items ul {
+        justify-content: center;
+    }
+    .footer-items p {
+        text-align: center;
+    }
+}
 
 /*==============================
 About Page
 ===============================*/
-.about h1,
-.about p  {
-    text-align: center;
+/*header h1*/
+.about h1  {
+    text-align: left;
 }
 
 .about h1{
@@ -242,14 +292,14 @@ About Page
     margin-bottom: 25px;
 }
 
+/*text p*/
 .about p {
-    width: 800px;
-    margin: 0 auto;
+    width: 40%;
     margin-bottom: 25px;
 }
-
+/*table*/
 .about-table {
-    margin: 0 auto;
+    margin: 0;
 }
 
 table {
@@ -278,21 +328,38 @@ caption {
     caption-side:bottom;
 }
 
+/*About tablet*/
+@media all and (min-width: 768px) { 
+    /*header h1*/
+    .about h1 {
+        text-align: center;
+    }
+    /*text p*/
+    .about p {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    /*table*/
+    .about-table {
+        margin: 0 auto;
+    }
+}
 /*==============================
 Contact Page
 ===============================*/
 .contacts {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .contacts div:nth-child(1) {
     width: 40%;
+    margin-bottom: 50px;
 }
-
+/*contact form width*/
 .contacts div:nth-child(2) {
-    width: 40%;
+    width: 100%;
 }
 
 .contacts div:nth-child(2) h2 {
@@ -344,10 +411,13 @@ Contact Page
 .contacts-list a:focus {
     color: var(--base-color-1);
 }
-
+/*contact button width*/
 .contacts .button {
     margin-top: 25px;
+    width: 100%;
+    text-align: center;
 }
+
 .contacts div:last-child .button {
     float: right;
     margin-top: 25px;
@@ -424,13 +494,37 @@ input::placeholder {
     height: 150px;
 }
 
+/*Contact tablet*/
+@media all and (min-width: 768px) { 
+    .contacts {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contacts div:nth-child(1) {
+        margin-bottom: 0px;
+    }
+    /*contact button width*/
+    .contacts .button {
+        margin-top: 25px;
+        width: auto;
+    }
+    /*contact form width*/
+    .contacts div:nth-child(2) {
+        width: 40%;
+    }
+}
+/*Contact desktop*/
+@media all and (min-width: 981px) { 
+
+}
 /*==============================
 Work Page
 ===============================*/
+/*header work*/
 .work-grid h1{
     margin: 0;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .work-grid h2,
@@ -453,9 +547,10 @@ Work Page
     text-decoration: underline;
 }
 
+/*mobile 1 column*/
 .project-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -467,4 +562,21 @@ Work Page
 
 .project-list__item:hover {
     box-shadow: var(--box-shadow);
+}
+
+/*Work tablet*/
+@media all and (min-width: 768px) { 
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    } 
+    /*header work*/
+    .work-grid h1{
+        text-align: center;
+    }
+}
+/*Work desktop*/
+@media all and (min-width: 981px) { 
+    .project-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
 }
