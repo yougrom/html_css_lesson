@@ -11,6 +11,29 @@ Add Global Text Parametrs
     --color-black: #000;
     --color-grey: rgb(204 204 204 / 50%);
     --font-base: 'Inter', sans-serif;
+    --transition-duration: 0.5s;
+    --largerScale: 1.05;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/*================================================================
+Overflow
+================================================================*/
+.overflow-y-clip{
+    overflow-y: clip;
+}
+.overflow-visible{
+    overflow: visible;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-x-auto{
+    overflow: auto;
 }
 
 body {
@@ -85,7 +108,7 @@ a {
     color: var(--base-color-1);
 }
 
-.main-navigation .active>a {
+.main-navigation .active > a {
     color: var(--base-color-1);
 }
 
@@ -117,7 +140,16 @@ a {
     padding-right: 0px;
 }
 
-/* Main Content Home Page */
+@media all and (max-width: 767px) {
+    .main-navigation {
+        width: 30px;
+        height: 30px;
+        background: red;
+        overflow: hidden;
+    }
+}
+
+/*Main Content Home Page*/
 /*hero*/
 .main-content {
     display: flex;
@@ -135,7 +167,7 @@ a {
     padding: 50px 0;
 }
 
-/* main style */
+/*main style*/
 h1,
 h2,
 h3,
@@ -146,7 +178,7 @@ h6 {
     text-transform: uppercase;
 }
 
-/* mobile font */
+/*mobile font*/
 h1 {
     font-size: 38px;
     line-height: 57px;
@@ -161,18 +193,28 @@ h3 {
     font-size: 24px;
     line-height: 36px;
 }
-
-main:after {
+/*background img*/
+body:after {
     content: '';
-    background-image: url("ellipse.svg");
     position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 1218px;
-    height: 1287px;
     left: -400px;
     bottom: -200px;
+    display: block;
+    width: calc(100% + 400px);
+    height: calc(100% + 200px);
+    background-image: url('ellipse.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 116px -200px;
     z-index: -1;
+}
+
+@media all and (min-width: 768px) {
+    body:after {
+        width: 1218px;
+        height: 1287px;
+        background-position: initial;
+    }
 }
 
 .main-content h1,
@@ -214,7 +256,7 @@ main:after {
         line-height: 42px;
     }
 
-    /* Main Content Home Page */
+    /*Main Content Home Page*/
     .main-content {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -333,7 +375,7 @@ table {
     border-collapse: collapse;
     border: 2px solid var(--base-color-2);
 
-    overflow-y: auto;
+    overflow-x: auto;
     min-width: 300px;
 }
 
@@ -433,7 +475,8 @@ caption {
 
     /*text p*/
     .about p {
-        width: 800px;
+        min-width: 800px;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 25px;
     }
@@ -488,7 +531,7 @@ Contact Page
     color: var(--base-color-2);
 
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: var(--transition-duration);
 }
 
 .contacts-list a:hover,
@@ -541,7 +584,7 @@ Contact Page
     background-color: transparent;
 
     transition-property: color, border, transform;
-    transition-duration: 0.5s, 0.5s, 0.5s;
+    transition-duration: var(--transition-duration), var(--transition-duration), var(--transition-duration);
 }
 
 .button:hover,
@@ -550,7 +593,7 @@ Contact Page
     color: var(--base-color-1);
     border: 1px solid var(--base-color-1);
 
-    transform: scale(1.05);
+    transform: scale(var(--largerScale));
 }
 
 .appointment-item {
@@ -576,7 +619,7 @@ Contact Page
     border-bottom: 1px solid var(--color-grey);
 
     transition-property: border-bottom;
-    transition-duration: 0.5s;
+    transition-duration: var(--transition-duration);
 }
 
 .appointment-item input:hover,
@@ -664,7 +707,7 @@ Work Page
     text-decoration: underline;
 
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: var(--transition-duration);
 }
 
 .work-grid a:hover {
@@ -684,12 +727,12 @@ Work Page
     border-radius: 10px;
 
     transition-property: box-shadow, transform;
-    transition-duration: 0.5s, 0.5s;
+    transition-duration: var(--transition-duration), var(--transition-duration);
 }
 
 .project-list__item:hover {
     box-shadow: var(--box-shadow);
-    transform: scale(1.05);
+    transform: scale(var(--largerScale));
 }
 
 /*Work tablet*/
