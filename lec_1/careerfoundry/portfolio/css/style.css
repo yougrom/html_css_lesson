@@ -100,12 +100,16 @@ a {
     text-transform: uppercase;
 
     background-color: transparent;
+
+    transition-property: color, transform;
+    transition-duration: var(--transition-duration), var(--transition-duration);
 }
 
 .main-navigation a:hover,
 .main-navigation a:active,
 .main-navigation a:focus {
     color: var(--base-color-1);
+    transform: scale(var(--largerScale));
 }
 
 .main-navigation .active > a {
@@ -305,10 +309,14 @@ body:after {
 
 .main-footer svg {
     fill: var(--base-color-2);
+
+    transition-property: color, transform;
+    transition-duration: var(--transition-duration), var(--transition-duration);
 }
 
 .main-footer svg:hover {
     fill: var(--base-color-1);
+    transform: scale(var(--largerScale));
 }
 
 .main-footer li {
