@@ -32,3 +32,67 @@ function.calculateTotalDistance(time, speedofFirst, speedofSecond) {
 }
 calculateTotalDistance(3, 12, 14);
   
+
+//Покупка хлеба:
+//Купи батон хлеба.Если будут яйца- купи десяток.
+
+// Функция покупки хлеба
+function buyABread(number) {
+    return number;
+}
+
+//Флаг, который говорит,есть ли в магазине яйца
+var eggsAreThere = true;
+//Если есть яйца- купить десяток батонов,
+if (eggsAreThere) {
+    buyABread(10);
+}
+
+// если нет - достаточнои одного.
+else{
+    buyABread(1);
+}
+
+// Циклические алгоритмы
+// Циклическийалгоритм:
+// Почистить все апельсины на столе.
+
+// Алгоритм
+//1 взять апельсин со стола
+//2 почистить его
+//3 убрать в тарелку
+//4 если есть еще апельсины — повторить
+
+// рекурсия
+var orangestLeft = 3;
+// Алгоритм
+function peelNextOrange() {
+//1 взять апельсин со стола
+    //2 почистить его
+    //3 убрать в тарелку
+    orangesLeft -= 1;
+    //4 если есть еще апельсины — повторить
+    if (orangesLeft > 0) {
+        peelNextOrange(); // рекурсия - вызов функции из неё самой.
+    }
+}
+peelNextOrange();
+orangesLeft;
+
+
+// Цикл — while
+
+var orangestLeft = 3;
+// Алгоритм
+function peelNextOrange() {
+//1 взять апельсин со стола
+    //2 почистить его
+    //3 убрать в тарелку
+    //4 если есть еще апельсины — повторить
+    while (orangesLeft > 0) {
+        orangesLeft -= 1; // Цикл — повторяет действие до тех пор пока условиe - true.
+    }
+}
+peelNextOrange();
+orangesLeft;
+
