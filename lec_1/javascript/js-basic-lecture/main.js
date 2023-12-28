@@ -96,3 +96,19 @@ function peelNextOrange() {
 peelNextOrange();
 orangesLeft;
 
+
+// циклический алгоритм
+// найти периметр многоугольника
+
+// алгоритм
+// найти сумму всех сторон
+
+var polygonSides = [10, 20, 30, 40, 30, 20, 10];
+var polygonPerimetr = 0;
+
+for (var i = 0; i < polygonSides.length; i++) {
+    polygonPerimetr += polygonSides[i];
+}
+console.log(polygonPerimetr);
+
+
