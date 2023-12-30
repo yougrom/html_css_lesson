@@ -1,3 +1,4 @@
+"use strict";
 // циклический алгоритм
 var drawCats = function (howManyTimes) {
     for (var i = 0; i < howManyTimes; i++) {
@@ -10,18 +11,18 @@ drawCats(10); // вызов функции
 // инкремент и декремент
 var highFives = 0;
 ++highFives;
-console.log(highFives);
+console.log(highFives); // 1
 ++highFives;
-console.log(highFives);
+console.log(highFives); // 2
 ++highFives;
-console.log(highFives);
+console.log(highFives); // 3
 --highFives;
-console.log(highFives);
+console.log(highFives); // 2
 
 // Example 1
 var x = 10;
 x = x + 5;
-console.log(x);
+console.log(x); // 15
 
 // Example 1.1
 var score = 10;
@@ -43,7 +44,7 @@ console.log(balloons);
 
 
 
-// строки
+// строки - strings - последовательность символов в кавычках
 let stringNine = "9";
 let numberNine = 9;
 let stringSum = stringNine + stringNine;
@@ -227,3 +228,5 @@ console.log(myVariable); // undefined
 
 let myNullVariable = null;
 console.log(myNullVariable); // null
+
+let 
