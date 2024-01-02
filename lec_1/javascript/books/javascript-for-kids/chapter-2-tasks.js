@@ -35,4 +35,3 @@ function getFirstSymbol(str) {
     return str[0];
 }
 console.log(getFirstSymbol("Hello")); // H
-
