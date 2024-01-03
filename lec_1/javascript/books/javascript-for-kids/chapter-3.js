@@ -70,7 +70,7 @@ console.log(animals); // ["Lama", "Cat", "Good Dog", "Cow"]
 // метод pop удаляет последний элемент массива
 
 // сохраняем переменную
-let lastAnimal = animals.pop();  
+let lastAnimal = animals.pop();
 console.log(lastAnimal); // Cow
 console.log(animals); // ["Lama", "Cat", "Good Dog"]
 
@@ -177,7 +177,6 @@ let lenghtArr = Math.random();
 console.log(Math.floor(lenghtArr() * 7)); // 0, 1, 2, 3, 4, 5, 6
 
 // Example
-
 let randomWords = ['Планета', 'Звезда', 'Галактика', 'Космос']; 
 let randomIndeks = Math.floor(Math.random() * 4);
 console.log(randomWords[randomIndeks]); // Звезда, Галактика, Космос, Планета - случайное слово из массива
@@ -213,6 +212,22 @@ console.log(randomInsult); // У тебя череп словно унылая �
 // или можно записать так
 
 let randomInsultLenght = ["У тебя", randomBodyPartLenght, "словно", randomAdjectiveLenght, randomNewWordLenght, "!!!"].join(" ");
-console.log(randomInsultLenght); 
+console.log(randomInsultLenght); // У тебя глаз словно унылая мартышка !!!
 
 
+// Example - Home Task
+let bodyParts = ['nose', 'bally', 'ass', 'albow'];
+let adjectives = ['funnier', 'longer', 'wider', 'shorter'];
+let animalBodyParts = ['claw', 'tale', 'paw', 'cloaca'];
+let animalsDifferent = ['turtle', 'camel', 'wolf', 'lobster'];
+
+let bodyPart = bodyParts[Math.floor(Math.random() * bodyParts.length)]; 
+let adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+let animalBodyPart = animalBodyParts[Math.floor(Math.random() * animalBodyParts.length)];
+let animalNew = animalsDifferent[Math.floor(Math.random() * animalsDifferent.length)];
+
+let randomShit = 'You have ' + bodyPart + ' even ' + adjective + ' than ' + animalNew + '`s '  + animalBodyPart + '!!!'; 
+console.log(randomShit); 
+
+let randomShitJoin = ['You have', bodyPart, 'even', adjective, 'than', animalBodyPart, 'of', animalNew].join(' ');
+console.log(randomShitJoin); 
